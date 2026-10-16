@@ -1,0 +1,18 @@
+{
+  "key_definition": "(PDB4, residue_position, mutant_AA) — chain and WT dropped",
+  "n_external_rows": 7085,
+  "n_external_duplicate_normalized_keys": 570,
+  "canonical_status_counts": {
+    "AMBIGUOUS_KEY": 2048,
+    "EXACT_UNIQUE": 1781,
+    "UNMATCHED": 644
+  },
+  "n_exact_unique": 1781,
+  "n_ambiguous_key": 2048,
+  "n_unmatched": 644,
+  "primary_rows": 1781,
+  "n_ambiguous_in_primary": 0,
+  "n_ambiguous_excluded": 2048,
+  "rule": "primary matched evaluation uses EXACT_UNIQUE only (n=1781), so the primary pool contains ZERO ambiguous keys; chain-ambiguous rows are EXCLUDED, not silently resolved",
+  "heldout_cath_separate": "the official held-out CATH test set has its own unambiguous rows and is evaluated separately without canonical remapping"
+}

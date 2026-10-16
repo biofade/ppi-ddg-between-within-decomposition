@@ -1,0 +1,17 @@
+{
+  "n_recomputed": 109,
+  "n_compared": 109,
+  "n_cells": 1635,
+  "max_abs_diff_vs_disk": 1.3877787807814457e-16,
+  "n_cells_over_tol": 0,
+  "identity_residual_by_scheme": {
+    "ROW": 0.5122112172603324,
+    "EQUAL": 0.5520354937528161,
+    "SQRT": 0.543298308625647,
+    "LOG": 0.5568213458469333,
+    "CAP30": 0.5657511443408182
+  },
+  "c_w_range_median": 0.062446248626047834,
+  "c_b_range_median": 0.018284109352877134,
+  "c_w_varies_all": true
+}

@@ -1,0 +1,6 @@
+model,SKEMPI_used,SKEMPI_version,our_targets,our_families,overlap_level_assessable,leakage_verdict,status
+ESM-2 8M (small PLM),NO,n/a,214,108,n/a,GREEN,GREEN
+Prompt-DDG,**YES**,v2.0,214,108,n/a,UNKNOWN_TRAINING_OVERLAP,**YELLOW**
+CATH-ddG (DDAffinity),**YES**,v2.0,214,108,n/a,UNKNOWN_TRAINING_OVERLAP,**RED（对本项目的 primary 评估）**
+ReCLIP,**uncertain**（mutation 分类头的训练数据未在 model card 声明）,unknown,214,108,n/a,UNKNOWN_TRAINING_OVERLAP,**YELLOW（本轮由 GREEN 候选降级）**
+PreFold-dG,likely YES（同类任务）,unknown,214,108,n/a,UNKNOWN_TRAINING_OVERLAP,**YELLOW / UNKNOWN**

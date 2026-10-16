@@ -1,0 +1,11 @@
+dataset,model,metric,n_rows,n_complex,point,ci_low,ci_high,sd,n_valid,n_skipped,p_gt_zero,n_boot_requested,seed,min_complex_per_iter
+CATH,Flex-ddG,macro_pdb_spearman,741,21,0.4138,0.3294,0.4993,0.0435,1151,3849,1.0,5000,42,15
+CATH,Flex-ddG,efficiency_at_10,741,21,0.593,0.1849,0.7438,9.9958,1151,3849,0.98,5000,42,15
+CATH,FoldX,macro_pdb_spearman,755,21,0.3561,0.2648,0.4407,0.0462,1151,3849,1.0,5000,42,15
+CATH,FoldX,efficiency_at_10,755,21,0.5027,0.1658,0.6445,0.377,1151,3849,0.9896,5000,42,15
+CATH,DDGPred,macro_pdb_spearman,755,21,0.3234,0.2124,0.4285,0.056,1151,3849,1.0,5000,42,15
+CATH,DDGPred,efficiency_at_10,755,21,0.4279,0.0957,0.6066,0.3778,1151,3849,0.9878,5000,42,15
+CATH,ESM-IF,macro_pdb_spearman,755,21,0.0277,-0.0805,0.1332,0.0568,1151,3849,0.6768,5000,42,15
+CATH,ESM-IF,efficiency_at_10,755,21,0.1503,-1.4814,0.8067,46.9349,1151,3849,0.6412,5000,42,15
+CATH,proteinMPNN,macro_pdb_spearman,755,21,0.2199,0.0924,0.3429,0.0655,1151,3849,0.9991,5000,42,15
+CATH,proteinMPNN,efficiency_at_10,755,21,0.2304,-1.1898,0.5379,46.9316,1151,3849,0.7637,5000,42,15

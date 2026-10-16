@@ -1,0 +1,12 @@
+{
+ "zip": "F:\\dsh\\downloads\\v7_2r_3\\V7_2R_3_PPI_CONTEXT_FEATURES.zip",
+ "sha256": "b7e9c039e9a8fdc29d874193576d9c0bcfcdab317158945c9e86e395393087e8",
+ "n_npz": 132,
+ "n_rows": 3452,
+ "dims": {
+  "r_wt": 1280,
+  "r_mut": 1280,
+  "delta_r": 1280
+ },
+ "median_chains": 3
+}

@@ -1,0 +1,17 @@
+{
+  "hermes_source": "https://github.com/StatPhysBio/hermes_experiments/skempi/results/hermes_py_000_ft_cdna117k_ddg_st/",
+  "hermes_raw_column": "log_proba_mt__minus__log_proba_wt",
+  "sign_convention": "hermes proxy = -(log_proba_mt - log_proba_wt); V8: ddG>0 = weaker binding",
+  "canonical_rows": 4473,
+  "matched_rows": 2865,
+  "match_rate": 0.6405097250167673,
+  "matched_targets": 195,
+  "total_targets": 214,
+  "matched_families": 101,
+  "total_families": 108,
+  "matched_targets_ge5": 94,
+  "evidence_tier": "TIER 2 — HERMES 在 SKEMPI v2.0 上微调(§50)，不能自动进入 Tier 1",
+  "official_predictions": true,
+  "inference_needed": false,
+  "gpu_needed": false
+}

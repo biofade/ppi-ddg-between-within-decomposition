@@ -1,0 +1,18 @@
+{
+  "variants_downloaded": [
+    "HERMES_bp000",
+    "HERMES_bp050",
+    "HERMES_py000",
+    "HERMES_py050",
+    "proteinMPNN_002",
+    "proteinMPNN_020",
+    "proteinMPNN_030"
+  ],
+  "n_evaluable_variants": 7,
+  "n_families": 2,
+  "strictness": "多 HERMES 变体共享架构与训练数据，属同一方法族；必须同时报告「按变体」与「按方法族」两套读数",
+  "sign_convention": "proxy = -(log_proba_mt - log_proba_wt)（或负 ddG 列）",
+  "combined_with_cathddg_baselines": 5,
+  "total_external_pool_if_merged": 12,
+  "caveat": "与 CATH-ddG 的 5 个基线属**不同宇宙**，合并时须分别标注"
+}

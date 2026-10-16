@@ -1,0 +1,34 @@
+{
+  "scenario_verdict": {
+    "A_quantitative_ddG": {
+      "primary_metric": "rmse",
+      "top1_ALL_pool": "L1_random_A1_base_set",
+      "top1_STRICT_pool": "F8_Full_s42",
+      "changed": true,
+      "hermes_eligible": false,
+      "note": "HERMES log-odds is NOT eligible for quantitative RMSE recommendation"
+    },
+    "B_library_ranking": {
+      "primary_metric": "macro_spearman",
+      "top1_ALL_pool": "R1_Base_F0_s42",
+      "top1_STRICT_pool": "R1_Base_F0_s42",
+      "changed": false
+    },
+    "C_wetlab_shortlist": {
+      "primary_metric": "efficiency@10",
+      "top1_ALL_pool": "L1_random_A3_base_local",
+      "top1_STRICT_pool": "p_P5_set_only_LSR",
+      "changed": true,
+      "note": "DESCRIPTIVE / LOW-CONFIDENCE: selection axis is structurally non-informative for n<=K targets; H3 = FAIL"
+    }
+  },
+  "figure_universes": {
+    "Fig1_matched_universe_strata": "f8c33c7e987d72c8",
+    "Fig2_CB_CW_decomposition": "f8c33c7e987d72c8",
+    "Fig3_controlled_split_inflation": "f8c33c7e987d72c8",
+    "Fig4_retrospective_remedy": "f8c33c7e987d72c8",
+    "Fig5_fixed_K_geometry": "f8c33c7e987d72c8",
+    "Fig6_weighting_sensitivity": "f8c33c7e987d72c8",
+    "Fig7_capability_landscape": "f8c33c7e987d72c8"
+  }
+}

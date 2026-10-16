@@ -1,0 +1,79 @@
+{
+  "universe": "U_MAS_7523 controlled split (V6.2)",
+  "controlled_design": "same model specs and hyperparameters (300 trees, PCA=128, no early stopping); seeds 42/43/44; only the split changes",
+  "per_configuration_identity": {
+    "n": 36,
+    "max_abs_residual": 4.440892098500626e-16,
+    "all_within_1e_12": true
+  },
+  "marginal_medians": {
+    "Random": {
+      "n": 9.0,
+      "median_r": 0.6844005344929932,
+      "median_C_B": 0.4274927112589242,
+      "median_C_W": 0.2590957837749831,
+      "macro": 0.070663669688216,
+      "rmse": 1.7677846225432483,
+      "sum_med": 0.6865884950339073,
+      "gap": 0.00218796054091408
+    },
+    "Complex": {
+      "n": 9.0,
+      "median_r": 0.1931303019861639,
+      "median_C_B": 0.0232860521237204,
+      "median_C_W": 0.1684801267698096,
+      "macro": 0.0496613747772779,
+      "rmse": 2.6412305988048703,
+      "sum_med": 0.19176617889353,
+      "gap": -0.0013641230926338954
+    },
+    "seq40": {
+      "n": 9.0,
+      "median_r": 0.1960858082639694,
+      "median_C_B": 0.0239466602808884,
+      "median_C_W": 0.1721391479830809,
+      "macro": 0.0630703395913485,
+      "rmse": 2.691058842625992,
+      "sum_med": 0.1960858082639693,
+      "gap": -1.1102230246251565e-16
+    },
+    "Family-OOD": {
+      "n": 9.0,
+      "median_r": 0.1507946900591696,
+      "median_C_B": -0.0071709754522827,
+      "median_C_W": 0.1579656655114524,
+      "macro": 0.0376825370235507,
+      "rmse": 2.695194928263558,
+      "sum_med": 0.1507946900591697,
+      "gap": 1.1102230246251565e-16
+    }
+  },
+  "paired": {
+    "n_paired": 9,
+    "max_abs_paired_residual": 4.163336342344337e-16,
+    "delta_r_median": -0.5332254351144581,
+    "delta_C_B_median": -0.43236037452269366,
+    "delta_C_W_median": -0.10113011826353069,
+    "attribution_marginal_median": 0.811251796260879,
+    "attribution_paired_median": 0.8104368875715755,
+    "attribution_perconfig_median": 0.8103426588384275,
+    "bootstrap_ci": {
+      "d_r": [
+        -0.5962228206904787,
+        -0.5195976172894435
+      ],
+      "d_CB": [
+        -0.4448277862215616,
+        -0.4231511937345013
+      ],
+      "d_CW": [
+        -0.17307162695597722,
+        -0.0806039705718121
+      ],
+      "ratio": [
+        0.7097198883539126,
+        0.8448723244877555
+      ]
+    }
+  }
+}

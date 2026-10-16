@@ -1,0 +1,47 @@
+{
+  "universes": [
+    "U_HERMES_CANONICAL",
+    "U_EXT_CANONICAL",
+    "U_EXT_HELDOUT_CATH"
+  ],
+  "methods_per_universe": {
+    "U_HERMES_CANONICAL": [
+      "HERMES",
+      "proteinMPNN"
+    ],
+    "U_EXT_CANONICAL": [
+      "DDGPred",
+      "ESM-IF",
+      "Flex-ddG",
+      "ddG_FoldX",
+      "proteinMPNN"
+    ],
+    "U_EXT_HELDOUT_CATH": [
+      "DDGPred",
+      "ESM-IF",
+      "Flex-ddG",
+      "ddG_FoldX",
+      "proteinMPNN"
+    ]
+  },
+  "cross_universe_pairs": [
+    {
+      "metric": "Overall r",
+      "universe_a": "U_EXT_CANONICAL",
+      "universe_b": "U_EXT_HELDOUT_CATH",
+      "n_common": 5,
+      "spearman": 0.8999999999999998,
+      "kendall": 0.7999999999999999
+    },
+    {
+      "metric": "Macro rho",
+      "universe_a": "U_EXT_CANONICAL",
+      "universe_b": "U_EXT_HELDOUT_CATH",
+      "n_common": 5,
+      "spearman": 0.8999999999999998,
+      "kendall": 0.7999999999999999
+    }
+  ],
+  "discipline": "只比较方法**排序**，不比较绝对数值（§21 不同宇宙不可比）",
+  "caveat": "三个宇宙的 target 定义不同（canonical 家族 vs complex_PPI）、行数不同（4473 / 3822 / 813）、模型数不同 ⇒ 跨宇宙秩一致只能作为**弱**证据"
+}

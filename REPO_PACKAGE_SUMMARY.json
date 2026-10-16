@@ -1,0 +1,13 @@
+{
+  "n_files": 296,
+  "total_bytes": 15270601,
+  "third_party": [
+    {
+      "path": "F:/dsh/downloads/cathddg/skempi_v2.csv",
+      "bytes": 1291260,
+      "sha256": "6faee86bbf75f7f90c900618c61f43fdb510339b768dc6118ebf1aa3c84aa347",
+      "source_url": "https://github.com/<CATH-ddG-repo>/.../data/SKEMPI2/skempi_v2.csv",
+      "note": "SKEMPI-derived annotation table distributed with CATH-ddG; source of the five external prediction columns"
+    }
+  ]
+}

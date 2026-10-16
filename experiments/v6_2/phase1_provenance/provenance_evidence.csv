@@ -1,0 +1,10 @@
+evidence,value,source_file
+v61_target_column,real_dG,scripts/v6_1/04_split_inflation.py
+v22_rows,8207,v2.2_proteinea_features.csv
+v22_unique_pdb,2171,v2.2_proteinea_features.csv
+ddg_pairs_forward_rows,7526,data/v4.0/ddg_pairs.csv
+v61_used_row_universe,8207,experiments/v6_1/04_split_inflation.py
+v22_real_dG_mean,-10.7166,features/v2.2_proteinea_features.csv
+ddg_pairs_ddg_mean,1.5215,data/v4.0/ddg_pairs.csv
+ddg_pairs_dg_wt_mean,-12.3198,data/v4.0/ddg_pairs.csv
+ddg_pairs_dg_mut_mean,-10.7983,data/v4.0/ddg_pairs.csv

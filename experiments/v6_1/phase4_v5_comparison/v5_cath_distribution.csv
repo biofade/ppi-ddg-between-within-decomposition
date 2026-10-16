@@ -1,0 +1,235 @@
+source,model,seed_key,complex_id,per_complex_spearman
+V5_baseline,V5 baseline,plain_s42,1B2U,0.5
+V5_baseline,V5 baseline,plain_s42,1B3S,1.0
+V5_baseline,V5 baseline,plain_s42,1C4Z,-0.0111
+V5_baseline,V5 baseline,plain_s42,1E96,0.2
+V5_baseline,V5 baseline,plain_s42,1EMV,0.295
+V5_baseline,V5 baseline,plain_s42,1FCC,-0.0833
+V5_baseline,V5 baseline,plain_s42,1HE8,-0.0691
+V5_baseline,V5 baseline,plain_s42,1IAR,0.0494
+V5_baseline,V5 baseline,plain_s42,1LFD,0.3883
+V5_baseline,V5 baseline,plain_s42,1REW,0.3039
+V5_baseline,V5 baseline,plain_s42,1WQJ,0.9
+V5_baseline,V5 baseline,plain_s42,2B0U,-0.3349
+V5_baseline,V5 baseline,plain_s42,2BTF,-0.8
+V5_baseline,V5 baseline,plain_s42,2KSO,-0.6322
+V5_baseline,V5 baseline,plain_s42,2O3B,-0.4286
+V5_baseline,V5 baseline,plain_s42,2QJA,-0.5
+V5_baseline,V5 baseline,plain_s42,2QJB,0.5
+V5_baseline,V5 baseline,plain_s42,2VN5,0.2417
+V5_baseline,V5 baseline,plain_s42,2WPT,0.0322
+V5_baseline,V5 baseline,plain_s42,3B4V,-0.6936
+V5_baseline,V5 baseline,plain_s42,3BK3,-0.3081
+V5_baseline,V5 baseline,plain_s42,3BN9,0.1899
+V5_baseline,V5 baseline,plain_s42,3BT1,0.093
+V5_baseline,V5 baseline,plain_s42,3BX1,-0.0714
+V5_baseline,V5 baseline,plain_s42,3F1S,0.5586
+V5_baseline,V5 baseline,plain_s42,3HH2,0.0947
+V5_baseline,V5 baseline,plain_s42,3L5X,-0.0024
+V5_baseline,V5 baseline,plain_s42,3LB6,0.2619
+V5_baseline,V5 baseline,plain_s42,3N85,-0.1423
+V5_baseline,V5 baseline,plain_s42,3R9A,0.0
+V5_baseline,V5 baseline,plain_s42,3SE4,0.8319
+V5_baseline,V5 baseline,plain_s42,3SEK,-0.3604
+V5_baseline,V5 baseline,plain_s42,3VR6,0.5493
+V5_baseline,V5 baseline,plain_s42,4BFI,0.4517
+V5_baseline,V5 baseline,plain_s42,4E6K,-0.2571
+V5_baseline,V5 baseline,plain_s42,4HFK,0.3571
+V5_baseline,V5 baseline,plain_s42,4KRL,0.4286
+V5_baseline,V5 baseline,plain_s42,4L0P,0.1429
+V5_baseline,V5 baseline,plain_s42,4X4M,-0.1429
+V5_baseline,V5 baseline,plain_s42,4YFD,0.4048
+V5_baseline,V5 baseline,plain_s42,4YH7,-0.6108
+V5_baseline,V5 baseline,plain_s42,5C6T,0.4325
+V5_baseline,V5 baseline,plain_s42,5F4E,-0.3956
+V5_baseline,V5 baseline,plain_s43,1B2U,1.0
+V5_baseline,V5 baseline,plain_s43,1B3S,1.0
+V5_baseline,V5 baseline,plain_s43,1C4Z,-0.0211
+V5_baseline,V5 baseline,plain_s43,1E96,0.0857
+V5_baseline,V5 baseline,plain_s43,1EMV,0.2774
+V5_baseline,V5 baseline,plain_s43,1FCC,-0.1833
+V5_baseline,V5 baseline,plain_s43,1HE8,0.2837
+V5_baseline,V5 baseline,plain_s43,1IAR,-0.064
+V5_baseline,V5 baseline,plain_s43,1LFD,0.4356
+V5_baseline,V5 baseline,plain_s43,1REW,0.1275
+V5_baseline,V5 baseline,plain_s43,1WQJ,1.0
+V5_baseline,V5 baseline,plain_s43,2B0U,-0.3349
+V5_baseline,V5 baseline,plain_s43,2BTF,-0.8
+V5_baseline,V5 baseline,plain_s43,2KSO,-0.6687
+V5_baseline,V5 baseline,plain_s43,2O3B,-0.2381
+V5_baseline,V5 baseline,plain_s43,2QJA,0.5
+V5_baseline,V5 baseline,plain_s43,2QJB,0.5
+V5_baseline,V5 baseline,plain_s43,2VN5,0.1687
+V5_baseline,V5 baseline,plain_s43,2WPT,0.0537
+V5_baseline,V5 baseline,plain_s43,3B4V,-0.7471
+V5_baseline,V5 baseline,plain_s43,3BK3,-0.3989
+V5_baseline,V5 baseline,plain_s43,3BN9,0.1932
+V5_baseline,V5 baseline,plain_s43,3BT1,0.1975
+V5_baseline,V5 baseline,plain_s43,3BX1,-0.1071
+V5_baseline,V5 baseline,plain_s43,3F1S,0.5225
+V5_baseline,V5 baseline,plain_s43,3HH2,0.1278
+V5_baseline,V5 baseline,plain_s43,3L5X,-0.0438
+V5_baseline,V5 baseline,plain_s43,3LB6,0.1429
+V5_baseline,V5 baseline,plain_s43,3N85,-0.1339
+V5_baseline,V5 baseline,plain_s43,3R9A,-0.1
+V5_baseline,V5 baseline,plain_s43,3SE4,0.8255
+V5_baseline,V5 baseline,plain_s43,3SEK,-0.7027
+V5_baseline,V5 baseline,plain_s43,3VR6,0.5722
+V5_baseline,V5 baseline,plain_s43,4BFI,0.4102
+V5_baseline,V5 baseline,plain_s43,4E6K,-0.6
+V5_baseline,V5 baseline,plain_s43,4HFK,0.2143
+V5_baseline,V5 baseline,plain_s43,4KRL,0.6571
+V5_baseline,V5 baseline,plain_s43,4L0P,-0.0857
+V5_baseline,V5 baseline,plain_s43,4X4M,-0.25
+V5_baseline,V5 baseline,plain_s43,4YFD,0.2143
+V5_baseline,V5 baseline,plain_s43,4YH7,0.012
+V5_baseline,V5 baseline,plain_s43,5C6T,0.3986
+V5_baseline,V5 baseline,plain_s43,5F4E,-0.2692
+V5_baseline,V5 baseline,plain_s44,1B2U,0.5
+V5_baseline,V5 baseline,plain_s44,1B3S,1.0
+V5_baseline,V5 baseline,plain_s44,1C4Z,-0.0354
+V5_baseline,V5 baseline,plain_s44,1E96,0.4857
+V5_baseline,V5 baseline,plain_s44,1EMV,0.2341
+V5_baseline,V5 baseline,plain_s44,1FCC,-0.15
+V5_baseline,V5 baseline,plain_s44,1HE8,0.2219
+V5_baseline,V5 baseline,plain_s44,1IAR,0.1373
+V5_baseline,V5 baseline,plain_s44,1LFD,0.4429
+V5_baseline,V5 baseline,plain_s44,1REW,0.1795
+V5_baseline,V5 baseline,plain_s44,1WQJ,0.9
+V5_baseline,V5 baseline,plain_s44,2B0U,-0.0197
+V5_baseline,V5 baseline,plain_s44,2BTF,-0.8
+V5_baseline,V5 baseline,plain_s44,2KSO,-0.6565
+V5_baseline,V5 baseline,plain_s44,2O3B,-0.1905
+V5_baseline,V5 baseline,plain_s44,2QJA,-0.5
+V5_baseline,V5 baseline,plain_s44,2QJB,0.5
+V5_baseline,V5 baseline,plain_s44,2VN5,0.0939
+V5_baseline,V5 baseline,plain_s44,2WPT,0.0461
+V5_baseline,V5 baseline,plain_s44,3B4V,-0.7901
+V5_baseline,V5 baseline,plain_s44,3BK3,-0.4209
+V5_baseline,V5 baseline,plain_s44,3BN9,0.2324
+V5_baseline,V5 baseline,plain_s44,3BT1,0.121
+V5_baseline,V5 baseline,plain_s44,3BX1,-0.1071
+V5_baseline,V5 baseline,plain_s44,3F1S,0.1982
+V5_baseline,V5 baseline,plain_s44,3HH2,-0.1344
+V5_baseline,V5 baseline,plain_s44,3L5X,0.0097
+V5_baseline,V5 baseline,plain_s44,3LB6,0.1667
+V5_baseline,V5 baseline,plain_s44,3N85,0.0753
+V5_baseline,V5 baseline,plain_s44,3R9A,-0.4
+V5_baseline,V5 baseline,plain_s44,3SE4,0.8268
+V5_baseline,V5 baseline,plain_s44,3SEK,-0.7388
+V5_baseline,V5 baseline,plain_s44,3VR6,0.4559
+V5_baseline,V5 baseline,plain_s44,4BFI,0.401
+V5_baseline,V5 baseline,plain_s44,4E6K,-0.3143
+V5_baseline,V5 baseline,plain_s44,4HFK,0.6667
+V5_baseline,V5 baseline,plain_s44,4KRL,0.4286
+V5_baseline,V5 baseline,plain_s44,4L0P,0.4857
+V5_baseline,V5 baseline,plain_s44,4X4M,-0.1429
+V5_baseline,V5 baseline,plain_s44,4YFD,0.0476
+V5_baseline,V5 baseline,plain_s44,4YH7,-0.3234
+V5_baseline,V5 baseline,plain_s44,5C6T,0.534
+V5_baseline,V5 baseline,plain_s44,5F4E,-0.4341
+CATH,DDGPred,n/a,1AK4,0.0159
+CATH,DDGPred,n/a,1BRS,0.5404
+CATH,DDGPred,n/a,1EMV,0.5924
+CATH,DDGPred,n/a,1FFW,0.0886
+CATH,DDGPred,n/a,1JTD,0.476
+CATH,DDGPred,n/a,1JTG,0.3172
+CATH,DDGPred,n/a,1QAB,0.3833
+CATH,DDGPred,n/a,1WQJ,0.6
+CATH,DDGPred,n/a,2G2U,0.2737
+CATH,DDGPred,n/a,2J0T,0.0508
+CATH,DDGPred,n/a,2KSO,0.0973
+CATH,DDGPred,n/a,2O3B,0.3095
+CATH,DDGPred,n/a,2PCB,0.6
+CATH,DDGPred,n/a,2PCC,-0.4623
+CATH,DDGPred,n/a,2WPT,0.6599
+CATH,DDGPred,n/a,3QHY,0.5959
+CATH,DDGPred,n/a,3SZK,0.3839
+CATH,DDGPred,n/a,4E6K,0.4286
+CATH,DDGPred,n/a,4HFK,0.8095
+CATH,DDGPred,n/a,4JEU,0.3473
+CATH,DDGPred,n/a,4L0P,-0.2571
+CATH,ESM-IF,n/a,1AK4,0.3593
+CATH,ESM-IF,n/a,1BRS,0.0111
+CATH,ESM-IF,n/a,1EMV,0.3357
+CATH,ESM-IF,n/a,1FFW,0.2159
+CATH,ESM-IF,n/a,1JTD,0.1694
+CATH,ESM-IF,n/a,1JTG,0.2606
+CATH,ESM-IF,n/a,1QAB,-0.55
+CATH,ESM-IF,n/a,1WQJ,-0.7
+CATH,ESM-IF,n/a,2G2U,0.1199
+CATH,ESM-IF,n/a,2J0T,0.2327
+CATH,ESM-IF,n/a,2KSO,0.1094
+CATH,ESM-IF,n/a,2O3B,0.2143
+CATH,ESM-IF,n/a,2PCB,-0.2571
+CATH,ESM-IF,n/a,2PCC,0.0
+CATH,ESM-IF,n/a,2WPT,-0.2674
+CATH,ESM-IF,n/a,3QHY,0.0842
+CATH,ESM-IF,n/a,3SZK,0.0989
+CATH,ESM-IF,n/a,4E6K,-0.1429
+CATH,ESM-IF,n/a,4HFK,0.1429
+CATH,ESM-IF,n/a,4JEU,0.6826
+CATH,ESM-IF,n/a,4L0P,-0.4286
+CATH,Flex-ddG,n/a,1AK4,0.6618
+CATH,Flex-ddG,n/a,1BRS,0.7607
+CATH,Flex-ddG,n/a,1EMV,0.6653
+CATH,Flex-ddG,n/a,1FFW,0.2826
+CATH,Flex-ddG,n/a,1JTD,0.5003
+CATH,Flex-ddG,n/a,1JTG,0.5121
+CATH,Flex-ddG,n/a,1QAB,0.4333
+CATH,Flex-ddG,n/a,1WQJ,-0.2
+CATH,Flex-ddG,n/a,2G2U,0.2374
+CATH,Flex-ddG,n/a,2J0T,0.0587
+CATH,Flex-ddG,n/a,2KSO,0.2381
+CATH,Flex-ddG,n/a,2O3B,0.2857
+CATH,Flex-ddG,n/a,2PCB,0.2
+CATH,Flex-ddG,n/a,2PCC,0.0806
+CATH,Flex-ddG,n/a,2WPT,0.7061
+CATH,Flex-ddG,n/a,3QHY,0.7063
+CATH,Flex-ddG,n/a,3SZK,0.38
+CATH,Flex-ddG,n/a,4E6K,0.5429
+CATH,Flex-ddG,n/a,4HFK,0.7619
+CATH,Flex-ddG,n/a,4JEU,0.491
+CATH,Flex-ddG,n/a,4L0P,0.4286
+CATH,FoldX,n/a,1AK4,0.4733
+CATH,FoldX,n/a,1BRS,0.7094
+CATH,FoldX,n/a,1EMV,0.8142
+CATH,FoldX,n/a,1FFW,0.2963
+CATH,FoldX,n/a,1JTD,0.3105
+CATH,FoldX,n/a,1JTG,0.4034
+CATH,FoldX,n/a,1QAB,-0.3051
+CATH,FoldX,n/a,1WQJ,0.3
+CATH,FoldX,n/a,2G2U,0.038
+CATH,FoldX,n/a,2J0T,0.4502
+CATH,FoldX,n/a,2KSO,0.4438
+CATH,FoldX,n/a,2O3B,-0.0952
+CATH,FoldX,n/a,2PCB,0.3714
+CATH,FoldX,n/a,2PCC,0.1856
+CATH,FoldX,n/a,2WPT,0.6932
+CATH,FoldX,n/a,3QHY,0.3685
+CATH,FoldX,n/a,3SZK,0.4072
+CATH,FoldX,n/a,4E6K,-0.0286
+CATH,FoldX,n/a,4HFK,0.619
+CATH,FoldX,n/a,4JEU,0.491
+CATH,FoldX,n/a,4L0P,0.5798
+CATH,proteinMPNN,n/a,1AK4,0.2011
+CATH,proteinMPNN,n/a,1BRS,0.4791
+CATH,proteinMPNN,n/a,1EMV,0.586
+CATH,proteinMPNN,n/a,1FFW,0.4002
+CATH,proteinMPNN,n/a,1JTD,-0.0324
+CATH,proteinMPNN,n/a,1JTG,0.3913
+CATH,proteinMPNN,n/a,1QAB,-0.3667
+CATH,proteinMPNN,n/a,1WQJ,0.9
+CATH,proteinMPNN,n/a,2G2U,-0.0708
+CATH,proteinMPNN,n/a,2J0T,0.6637
+CATH,proteinMPNN,n/a,2KSO,0.4499
+CATH,proteinMPNN,n/a,2O3B,0.3571
+CATH,proteinMPNN,n/a,2PCB,-0.3714
+CATH,proteinMPNN,n/a,2PCC,0.2697
+CATH,proteinMPNN,n/a,2WPT,0.0991
+CATH,proteinMPNN,n/a,3QHY,-0.1227
+CATH,proteinMPNN,n/a,3SZK,-0.0085
+CATH,proteinMPNN,n/a,4E6K,0.7714
+CATH,proteinMPNN,n/a,4HFK,-0.0714
+CATH,proteinMPNN,n/a,4JEU,0.4671
+CATH,proteinMPNN,n/a,4L0P,-0.3143

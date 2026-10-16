@@ -1,0 +1,78 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "levels": [
+    "L1_random",
+    "L2_complex",
+    "L3_seq40",
+    "L4_family"
+  ],
+  "rows": 7523,
+  "distinct_keys": 4812,
+  "all_keys_single_fold": true,
+  "detail": {
+    "L1_random_s42": {
+      "units": 4592,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L1_random_s43": {
+      "units": 4592,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L1_random_s44": {
+      "units": 4592,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L2_complex_s42": {
+      "units": 230,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L2_complex_s43": {
+      "units": 230,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L2_complex_s44": {
+      "units": 230,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L3_seq40_s42": {
+      "units": 301,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L3_seq40_s43": {
+      "units": 301,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L3_seq40_s44": {
+      "units": 301,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L4_family_s42": {
+      "units": 112,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L4_family_s43": {
+      "units": 112,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    },
+    "L4_family_s44": {
+      "units": 112,
+      "keys": 4812,
+      "keys_crossing_folds": 0
+    }
+  }
+}

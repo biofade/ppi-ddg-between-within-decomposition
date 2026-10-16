@@ -1,0 +1,52 @@
+{
+  "benchmark": "CR-PPI-ddG (Capability-Resolved PPI ddG Benchmark)",
+  "status": "working name, not publication-final",
+  "axes": [
+    "A_calibration",
+    "B_within_target_ranking",
+    "C_selection_utility"
+  ],
+  "no_universal_composite_score_yet": true,
+  "primary_eligibility_n": 5,
+  "sensitivity_eligibility_n": [
+    3,
+    10
+  ],
+  "bootstrap": {
+    "requested": 5000,
+    "cluster": "target",
+    "seed": 42,
+    "require_valid_5000": true
+  },
+  "weighting_schemes": [
+    "ROW",
+    "EQUAL",
+    "SQRT",
+    "LOG",
+    "CAP30"
+  ],
+  "k_primary": 10,
+  "practical_tie_tol": {
+    "overall_pearson": 0.01,
+    "macro_spearman": 0.01
+  },
+  "target_namespace": "canonical_target_labels.csv joined by row_id",
+  "frozen_split": "OUTER_FOLDS_V7_2",
+  "forbidden_target_identity": [
+    "block_L.pdb_id",
+    "mutation_sites.pdb_id"
+  ],
+  "reuse_first": true,
+  "retrain_last": true,
+  "gpu_last_resort": true,
+  "hard_stops": [
+    "restart V7.4R2",
+    "retrain PLMs",
+    "rerun ESM embeddings",
+    "rerun OpenMM",
+    "new neural architectures",
+    "new handcrafted feature families"
+  ],
+  "language": "task-specific family-OOD",
+  "n_workers": 2
+}

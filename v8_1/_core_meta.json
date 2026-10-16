@@ -1,0 +1,31 @@
+{
+  "bug_report": {
+    "efficiency@10": {
+      "rho_raw_rmse": -0.168514848408885,
+      "rho_negated_rmse": 0.168514848408885,
+      "rho_overall_pearson": -0.00712315203147223,
+      "sign_flipped": true,
+      "n": 160
+    },
+    "ndcg@10": {
+      "rho_raw_rmse": -0.24507041941928195,
+      "rho_negated_rmse": 0.24507041941928195,
+      "rho_overall_pearson": 0.09534651053233499,
+      "sign_flipped": true,
+      "n": 160
+    },
+    "hit@10": {
+      "rho_raw_rmse": 0.11405306596610967,
+      "rho_negated_rmse": -0.11405306596610967,
+      "rho_overall_pearson": -0.25779918948042285,
+      "sign_flipped": true,
+      "n": 160
+    }
+  },
+  "n_rowset_strata": 7,
+  "n_artifacts": 12,
+  "n_level_c": 63,
+  "n_permissive_keys": 37,
+  "n_red": 37,
+  "n_green": 165
+}

@@ -1,0 +1,18 @@
+{
+  "universe": "U_EXT_HELDOUT_CATH",
+  "source": "https://github.com/ak422/CATH-ddG data/SKEMPI2/skempi_v2.csv",
+  "split_column": "cath_fold == 'val'",
+  "n_rows": 813,
+  "n_ppi": 53,
+  "models": [
+    "Flex-ddG",
+    "DDGPred",
+    "ddG_FoldX",
+    "ESM-IF",
+    "proteinMPNN"
+  ],
+  "n_evaluable": 5,
+  "evidence_tier": "TIER 2（基线原始训练集与本测试集的重叠未核实，§50）",
+  "not_published": "CATH-ddG 自身的逐突变预测未发布（补充材料仅 per-protein 表）",
+  "verdict": "EXTERNAL_MODEL_POOL_TOO_SMALL: n=5 < 8 ⇒ NOT_TESTABLE"
+}

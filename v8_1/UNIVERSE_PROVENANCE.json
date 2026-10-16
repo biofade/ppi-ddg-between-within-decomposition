@@ -1,0 +1,40 @@
+{
+  "universes": {
+    "U_MAS_7523": {
+      "source": "experiments/v6_2/phase2_split4/matched_analysis_set.csv",
+      "producer": "scripts/v6_2/02b_canonical_set.py",
+      "definition": "build_pair_features 的真 ddG forward 配对全集；保留四档 split 均可用的行；coverage_report 记录剔除 0 行",
+      "n_rows": 7523,
+      "n_targets_pdb": 230,
+      "n_families": 112,
+      "n_unique_state_id": 6047,
+      "n_unique_pdb_mutation_keys": 4812,
+      "n_keys_with_multiple_rows": 2011,
+      "n_keys_with_conflicting_ddg": 1405,
+      "n_ge1": 230,
+      "n_ge2": 203,
+      "n_ge3": 193,
+      "n_ge5": 172,
+      "n_ge10": 118
+    },
+    "U_CANON_4473": {
+      "source": "experiments/v7_1_1/phase1_universe/canonical_target_labels.csv",
+      "producer": "scripts/v7_1_1/02_reconciliation_final.py (L99-L106)",
+      "definition": "取 block_L_local.csv 的 pair_row 列表，映射到 matched_analysis_set 的 pdb_id / family_label；是 7523 的特征覆盖子集",
+      "n_rows": 4473,
+      "n_targets": 214,
+      "n_families": 108,
+      "n_ge1": 214,
+      "n_ge2": 180,
+      "n_ge3": 164,
+      "n_ge5": 130,
+      "n_ge10": 85
+    }
+  },
+  "relation": {
+    "canonical_rows_subset_of_mas_rows": true,
+    "rows_in_mas_not_in_canonical": 3050,
+    "targets_in_mas_not_in_canonical": 16,
+    "families_in_mas_not_in_canonical": 4
+  }
+}

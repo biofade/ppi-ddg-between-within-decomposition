@@ -1,0 +1,13 @@
+id,check,result,detail
+1,所有头条数字存在于 FROZEN_RESULTS.json,PASS,键数=11
+2,每张图的 universe 均登记（figure captions 存在于最终树）,PASS,图 7 张；caption 存在
+3,每张表的 universe 均已登记,PASS,表 8 张
+4,无跨 universe 排名（每个 stratum 唯一且 rowset_hash 已登记）,PASS,strata=10，重复键=0
+5,部署推荐中无 RED provenance 模型,PASS,RED 键 34 个；provenance-clean 场景文件 1 个
+6,秩一致表无原始 RMSE 方向错误（使用 neg_rmse）,PASS,且 12_decision_alignment 已标记 OBSOLETE
+7,HERMES log-odds 未被赋予 RMSE 数值,PASS,
+8,主匹配评估中无 ambiguous CATH key,PASS,审计文件 存在
+9,无重复 label key（泄漏日志去重）,PASS,重复=0
+10,无未标注为 HISTORICAL 的过时陈述,PASS,可疑 0 处
+11,无「n>=50 提高 fixed-K 区分度」的建议,PASS,D(50)=0.1568627450980392 < D(20)=0.23809523809523814
+12,外部声明有方法计数与来源支撑（含低功效警告）,PASS,命中方法名 15 次；低功效警告 有

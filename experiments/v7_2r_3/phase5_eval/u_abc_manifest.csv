@@ -1,0 +1,2 @@
+universe,rows,targets,families,n_ge5,n5_ref,rel,coverage_limited
+U_ABC,3452,132,70,87,115,0.7565217391304347,True

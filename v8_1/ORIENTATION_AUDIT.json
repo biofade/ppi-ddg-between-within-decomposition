@@ -1,0 +1,32 @@
+{
+  "Flex-ddG": {
+    "corr_pooled": 0.4969951133713639,
+    "corr_within": 0.4902726703224929,
+    "raw_orientation": "higher means larger ddG / weaker binding",
+    "orientation_multiplier": 1
+  },
+  "DDGPred": {
+    "corr_pooled": 0.5768102427158844,
+    "corr_within": 0.505179808294534,
+    "raw_orientation": "higher means larger ddG / weaker binding",
+    "orientation_multiplier": 1
+  },
+  "ddG_FoldX": {
+    "corr_pooled": 0.49651280232915307,
+    "corr_within": 0.4898906632979912,
+    "raw_orientation": "higher means larger ddG / weaker binding",
+    "orientation_multiplier": 1
+  },
+  "ESM-IF": {
+    "corr_pooled": -0.262458682055776,
+    "corr_within": -0.2432669940904961,
+    "raw_orientation": "higher means stronger binding",
+    "orientation_multiplier": -1
+  },
+  "proteinMPNN": {
+    "corr_pooled": 0.3137094270276331,
+    "corr_within": 0.29749076744619307,
+    "raw_orientation": "higher means larger ddG / weaker binding",
+    "orientation_multiplier": 1
+  }
+}

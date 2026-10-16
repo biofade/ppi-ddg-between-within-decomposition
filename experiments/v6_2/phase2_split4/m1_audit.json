@@ -1,0 +1,54 @@
+{
+ "found": [
+  {
+   "name": "V5 共享机器（特征装配 + 指标）",
+   "path": "scripts/v5/v5_common.py",
+   "size": 27748,
+   "sha256": "91bee0814f66737b50edadd937d967644bbf3ec776def1a88127e0caaace0b98"
+  },
+  {
+   "name": "V5 Gate A 复现脚本（C+DGaux_fwd+rev）",
+   "path": "scripts/v5/02_baseline_repro.py",
+   "size": 13749,
+   "sha256": "f3b333c3fe88a828385eae945795150d42df489fbf64f985d4dcc279e6948e2a"
+  },
+  {
+   "name": "V4 原始实现（创新2）",
+   "path": "scripts/v4.0/11_dualhead_dg_ddg.py",
+   "size": 12098,
+   "sha256": "991068c7a4bf9342a39c400fc020235662cd533378a6904faabeff33b69cdc98"
+  },
+  {
+   "name": "V4 原始实现（创新1）",
+   "path": "scripts/v4.0/10_dualhead_symmetric.py",
+   "size": 12363,
+   "sha256": "9c7443af6c8410a70e4ec1fafdd15e60786be1942bbaa61b320739578a113b61"
+  },
+  {
+   "name": "V4 共享机器",
+   "path": "scripts/v4.0/v40_common.py",
+   "size": 14213,
+   "sha256": "74f2dbb20401ea9bc97c338bae6d2a54da0c0956023f9f0eecfcc21d1f691cb1"
+  }
+ ],
+ "dgaux_semantics": [
+  "- V5 复现: OOF 作为额外一列 → `Daux_rev = np.hstack([-Dn, oof[:, None]]).astype(np.float32)   # S/aux 不取负`",
+  "- V5 复现: `GroupKFold(n_splits=args.folds)`",
+  "- V5 复现: 反向语义 → `Daux_rev = np.hstack([-Dn, oof[:, None]]).astype(np.float32)   # S/aux 不取负`",
+  "- V5 复现: OOF 作为额外一列 → `Daux = np.hstack([Dn, oof[:, None]]).astype(np.float32)`",
+  "- V4 原始: 反向语义 → `Xc2 = np.vstack([Daux[mtr], Daux_rev[mtr]])`",
+  "- V5 复现: 反向语义 → `Xc = np.vstack([Daux[mtr], Daux_rev[mtr]])`",
+  "- V4 原始: 反向语义 → `Daux_rev = np.hstack([-Dn, oof[:, None]]).astype(np.float32)`",
+  "- V4 原始: OOF 作为额外一列 → `Daux = np.hstack([Dn, oof[:, None]]).astype(np.float32)`",
+  "- V4 原始: `GroupKFold(n_splits=args.folds)`",
+  "- V4 原始: 反向语义 → `Xc = np.vstack([Dn[mtr], -Dn[mtr]])`",
+  "- V4 原始: OOF 作为额外一列 → `Daux_rev = np.hstack([-Dn, oof[:, None]]).astype(np.float32)`"
+ ],
+ "flags": {
+  "M1_implementation_audited": true,
+  "M1_uses_historical_script": true,
+  "M1_only_split_layer_replaced": true,
+  "M1_implementation_not_found": false
+ },
+ "note": "split generation 与 OOF generation 层被替换（V6.2 §2.0 允许）；模型定义/特征定义/超参数未改。"
+}

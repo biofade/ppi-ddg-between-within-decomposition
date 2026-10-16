@@ -1,0 +1,28 @@
+{
+  "source": "https://github.com/ak422/CATH-ddG data/SKEMPI2/skempi_v2.csv",
+  "n_source_rows": 7085,
+  "external_models": [
+    "Flex-ddG",
+    "DDGPred",
+    "ddG_FoldX",
+    "prompt-fold0",
+    "prompt-fold1",
+    "prompt-fold2",
+    "ESM-IF",
+    "proteinMPNN"
+  ],
+  "match_rate": {
+    "Flex-ddG": 0.8397048960429242,
+    "DDGPred": 0.8461882405544378,
+    "ddG_FoldX": 0.8537894030851777,
+    "prompt-fold0": 0.0,
+    "prompt-fold1": 0.0,
+    "prompt-fold2": 0.0,
+    "ESM-IF": 0.8537894030851777,
+    "proteinMPNN": 0.8537894030851777
+  },
+  "matched_any": 0.8544600938967136,
+  "n_evaluable_external_models": 5,
+  "contamination_note": "CATH-ddG 自身 88% 行属其训练集，且**未发布自身逐突变预测**；本表仅含基线方法（Flex-ddG/DDGPred/FoldX/prompt-fold/ESM-IF/proteinMPNN），其 provenance 需逐列审计（§50）",
+  "snapshot_gap": "⚠ snapshot 一致性未逐位验证：HERMES 快照 2897 单点行中仅 331 行命中本表 key（11.4%）。说明两数据集的 PDB4+突变串口径存在系统性差异 ⇒ **需先解决快照问题**才能把两者放进同一个匹配宇宙。"
+}

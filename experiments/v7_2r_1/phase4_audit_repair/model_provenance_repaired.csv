@@ -1,0 +1,6 @@
+model,license_code,license_weights,status,primary_use
+Prompt-DDG,MIT,MIT(code); SKEMPI-supervised weights,YELLOW (checkpoint) / GREEN (code+architecture),architecture/code reuse ONLY
+ReCLIP (paper),n/a,n/a,REFERENCE,method citation
+ReCLIP (SiweiLab source),see repo LICENSE,no head released,candidate,feature-construction reuse
+ReCLIP (RiverZ HF head),other,other,YELLOW,NOT in primary
+MINT,MIT,MIT,candidate (foundation) / GPU required,Track B representation (deferred: >2GB)

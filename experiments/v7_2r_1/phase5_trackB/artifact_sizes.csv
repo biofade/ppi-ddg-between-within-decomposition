@@ -1,0 +1,5 @@
+artifact,license,size_mb,purpose,url
+MINT checkpoint（mint.ckpt）,MIT,3253.8,MINT 主干权重（基于 ESM2-650M）,https://huggingface.co/varunullanat2012/mint/resolve/main/mint.ckpt
+ESM2-650M（model.safetensors）,MIT,2609.5,MINT/ReCLIP 特征构建所需的底层 PLM,https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/main/model.safetensors
+Bernett MLP head（bernett_mlp.pth）,MIT,26.2,MINT 提供的**下游任务 head**（预测两序列是否结合）,https://huggingface.co/varunullanat2012/mint/resolve/main/bernett_mlp.pth
+ESM2-8M（model.safetensors）,MIT,31.4,Track A 已在用（已缓存于 F 盘）,https://huggingface.co/facebook/esm2_t6_8M_UR50D/resolve/main/model.safetensors

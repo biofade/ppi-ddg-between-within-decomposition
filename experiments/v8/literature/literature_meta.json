@@ -1,0 +1,12 @@
+{
+  "n_papers_local": 12,
+  "extraction": "MACHINE_CANDIDATE (regex + evidence snippet)",
+  "novelty_matrix_status": "UNKNOWN for all external methods (not audited)",
+  "forbidden_claims": [
+    "first family-OOD ddG benchmark",
+    "first per-target evaluation",
+    "first Top-K benchmark",
+    "all existing benchmarks are invalid",
+    "Overall Pearson is useless"
+  ]
+}

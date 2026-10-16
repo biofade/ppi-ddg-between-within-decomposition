@@ -1,0 +1,51 @@
+check,level,seed,pass,detail
+obs_duplicate_no_cross,L1_random,42,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L1_random,42,True,同一 state 不跨折
+obs_duplicate_no_cross,L1_random,43,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L1_random,43,True,同一 state 不跨折
+obs_duplicate_no_cross,L1_random,44,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L1_random,44,True,同一 state 不跨折
+obs_duplicate_no_cross,L2_complex,42,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L2_complex,42,True,同一 state 不跨折
+pdb_no_cross,L2_complex,42,True,train/test PDB 交集为空
+obs_duplicate_no_cross,L2_complex,43,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L2_complex,43,True,同一 state 不跨折
+pdb_no_cross,L2_complex,43,True,train/test PDB 交集为空
+obs_duplicate_no_cross,L2_complex,44,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L2_complex,44,True,同一 state 不跨折
+pdb_no_cross,L2_complex,44,True,train/test PDB 交集为空
+obs_duplicate_no_cross,L3_seq40,42,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L3_seq40,42,True,同一 state 不跨折
+pdb_no_cross,L3_seq40,42,True,train/test PDB 交集为空
+seq40_no_cross,L3_seq40,42,True,seq40 cluster 交集为空
+obs_duplicate_no_cross,L3_seq40,43,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L3_seq40,43,True,同一 state 不跨折
+pdb_no_cross,L3_seq40,43,True,train/test PDB 交集为空
+seq40_no_cross,L3_seq40,43,True,seq40 cluster 交集为空
+obs_duplicate_no_cross,L3_seq40,44,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L3_seq40,44,True,同一 state 不跨折
+pdb_no_cross,L3_seq40,44,True,train/test PDB 交集为空
+seq40_no_cross,L3_seq40,44,True,seq40 cluster 交集为空
+obs_duplicate_no_cross,L4_family,42,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L4_family,42,True,同一 state 不跨折
+pdb_no_cross,L4_family,42,True,train/test PDB 交集为空
+seq40_no_cross,L4_family,42,True,seq40 cluster 交集为空
+family_no_cross,L4_family,42,True,family 交集为空
+obs_duplicate_no_cross,L4_family,43,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L4_family,43,True,同一 state 不跨折
+pdb_no_cross,L4_family,43,True,train/test PDB 交集为空
+seq40_no_cross,L4_family,43,True,seq40 cluster 交集为空
+family_no_cross,L4_family,43,True,family 交集为空
+obs_duplicate_no_cross,L4_family,44,True,"同一 (pdb,mutation) 不跨折"
+state_id_no_cross,L4_family,44,True,同一 state 不跨折
+pdb_no_cross,L4_family,44,True,train/test PDB 交集为空
+seq40_no_cross,L4_family,44,True,seq40 cluster 交集为空
+family_no_cross,L4_family,44,True,family 交集为空
+dgaux_dual_grouping_constructed,L4_family,all,True,"level_units=112, inner=6047"
+reverse_subset_of_train,L1_random,42,True,reverse 仅由 train 生成
+test_is_canonical_forward_only,L1_random,42,True,test 未被增广
+m1_M1_implementation_audited,n/a,n/a,True,期望 True → ✅
+m1_M1_uses_historical_script,n/a,n/a,True,期望 True → ✅
+m1_M1_only_split_layer_replaced,n/a,n/a,True,期望 True → ✅
+m1_M1_implementation_not_found,n/a,n/a,True,期望 False（未发生）→ ✅
+pearson_decomp_float_sanity,all,all,True,"36/36, max|diff|=1.110e-16"

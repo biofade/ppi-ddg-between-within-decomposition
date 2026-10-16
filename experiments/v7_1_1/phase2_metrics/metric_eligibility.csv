@@ -1,0 +1,12 @@
+metric,min_target_n,n_eligible_targets,n_rows,target_list_sha256_prefix12,note
+Overall Pearson,1,214,4473,47d7ea4d06c3,全部 target（行级相关）
+RMSE,1,214,4473,47d7ea4d06c3,全部 target（行级）
+C_B / C_W,1,214,4473,47d7ea4d06c3,全部 target（分解到每个 target）
+target-mean Pearson,1,214,4473,47d7ea4d06c3,全部 target（每 target 一个点）
+attenuation slope,3,164,4407,a2e1e2edecb6,≥3 个 target 才能拟合 slope
+Macro per-target Spearman,5,130,4288,b0fee31a976d,每 target n≥5
+Kendall tau-b,2,180,4439,7fc2f74f6910,每 target n≥2
+Pairwise Accuracy,2,180,4439,7fc2f74f6910,每 target n≥2
+Efficiency@10,5,130,4288,b0fee31a976d,"每 target n≥5（min(10,len) 规则）"
+Hit@10,2,180,4439,7fc2f74f6910,每 target n≥2
+Precision@10,2,180,4439,7fc2f74f6910,每 target n≥2

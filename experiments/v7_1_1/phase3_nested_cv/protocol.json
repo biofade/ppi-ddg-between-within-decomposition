@@ -1,0 +1,38 @@
+{
+ "protocol_version": "V7_2_NESTED_FAMILY_OOD_v1",
+ "frozen_at": "2026-10-14 18:13:00",
+ "authoritative_target_labels": "experiments/v7_1_1/phase1_universe/canonical_target_labels.csv",
+ "target_id_rule": "canonical.pdb_id via pair_row (== d['groups'])",
+ "outer": {
+  "unit": "family",
+  "folds": 5,
+  "seeds": [
+   42,
+   43,
+   44
+  ],
+  "disjoint_assert": "set(fam[train]) & set(fam[test]) == empty",
+  "name": "OUTER_FOLDS_V7_2"
+ },
+ "inner": {
+  "unit": "family",
+  "k": "min(3, max(2, n_unique_family))",
+  "disjoint_assert": "same as outer"
+ },
+ "selection": {
+  "primary": "macro_spearman(n>=5)",
+  "tie_break": [
+   "efficiency_at_10",
+   "C_W",
+   "simpler_model"
+  ],
+  "tie_eps": 0.005,
+  "forbidden": [
+   "overall_pearson"
+  ]
+ },
+ "z_transform": "standardize_within_target() 单一实现",
+ "collapsed_rule": "std<1e-6 -> z=0, PRED_SCORE_COLLAPSED=1",
+ "no_outer_peeking": true,
+ "hyperparams_preregistered_in_inner_only": true
+}

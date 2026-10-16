@@ -1,0 +1,272 @@
+{
+ "SAMAffinity": {
+  "note": "V6.0 已下载 58 个 test_fold CSV（仅含 ddG 真值）",
+  "repo": "iobio-zjut/SAMAffinity",
+  "exists": true,
+  "license": null,
+  "size_kb": 9299,
+  "default_branch": "main",
+  "pushed_at": "2025-12-15T03:12:17Z",
+  "n_files": 121,
+  "n_data_files": 50,
+  "pred_candidates": [],
+  "large_data_files": [
+   {
+    "path": "data/S4169.csv",
+    "size": 4278188
+   },
+   {
+    "path": "data/M1101.csv",
+    "size": 1561914
+   },
+   {
+    "path": "data/S645.csv",
+    "size": 1006527
+   },
+   {
+    "path": "data/S1131.csv",
+    "size": 763063
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold3.csv",
+    "size": 446643
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold8.csv",
+    "size": 442144
+   }
+  ],
+  "status": "DATA_ONLY_NO_PRED"
+ },
+ "Pythia-PPI": {
+  "note": "V6.0 未找到预测文件",
+  "repo": "Wublab/pythia_ppi",
+  "exists": true,
+  "license": "Apache-2.0",
+  "size_kb": 17071,
+  "default_branch": "main",
+  "pushed_at": "2026-06-13T03:14:31Z",
+  "n_files": 32,
+  "n_data_files": 0,
+  "pred_candidates": [],
+  "large_data_files": [],
+  "status": "CODE_ONLY_NO_PRED"
+ },
+ "MINT": {
+  "note": "V6.0 未找到预测文件",
+  "repo": "VarunUllanat/mint",
+  "exists": true,
+  "license": "MIT",
+  "size_kb": 3615,
+  "default_branch": "main",
+  "pushed_at": "2026-06-15T16:56:53Z",
+  "n_files": 68,
+  "n_data_files": 2,
+  "pred_candidates": [],
+  "large_data_files": [],
+  "status": "CODE_ONLY_NO_PRED"
+ },
+ "DeepPPAPred": {
+  "note": "需搜索",
+  "search_candidates": [],
+  "status": "REPO_NOT_FOUND"
+ },
+ "MuToN": {
+  "note": "需搜索",
+  "search_candidates": [
+   {
+    "full_name": "zpliulab/MuToN",
+    "stars": 6,
+    "pushed_at": "2025-12-02",
+    "license": "MIT",
+    "size_kb": 577,
+    "desc": ""
+   },
+   {
+    "full_name": "mutonaothenton/mutonaothenton.github.io",
+    "stars": 1,
+    "pushed_at": "2022-07-20",
+    "license": null,
+    "size_kb": 45198,
+    "desc": ""
+   },
+   {
+    "full_name": "Mindera/muton",
+    "stars": 15,
+    "pushed_at": "2018-08-01",
+    "license": "MIT",
+    "size_kb": 401,
+    "desc": "A feature toggle tool with support for feature throttling and multivariance testing."
+   },
+   {
+    "full_name": "trailofbits/muton",
+    "stars": 9,
+    "pushed_at": "2026-06-30",
+    "license": "AGPL-3.0",
+    "size_kb": 530,
+    "desc": "Mutation testing framework for TON smart contracts"
+   },
+   {
+    "full_name": "raydaly/muton",
+    "stars": 5,
+    "pushed_at": "2011-10-18",
+    "license": null,
+    "size_kb": 116,
+    "desc": "a couchdb administration console for mobile using jquerymobile"
+   }
+  ],
+  "repo": "zpliulab/MuToN",
+  "exists": true,
+  "license": "MIT",
+  "size_kb": 577,
+  "default_branch": "main",
+  "pushed_at": "2025-12-02T03:16:05Z",
+  "n_files": 38,
+  "n_data_files": 2,
+  "pred_candidates": [],
+  "large_data_files": [
+   {
+    "path": "lists/skempi_v2.csv",
+    "size": 1602208
+   }
+  ],
+  "status": "DATA_ONLY_NO_PRED"
+ },
+ "ProBASS": {
+  "note": "需搜索",
+  "search_candidates": [
+   {
+    "full_name": "sagagugit/ProBASS",
+    "stars": 13,
+    "pushed_at": "2026-05-24",
+    "license": null,
+    "size_kb": 2394,
+    "desc": ""
+   },
+   {
+    "full_name": "Gryshchenko/probass",
+    "stars": 0,
+    "pushed_at": "2018-08-16",
+    "license": null,
+    "size_kb": 11485,
+    "desc": ""
+   },
+   {
+    "full_name": "chancasTIC/probass",
+    "stars": 0,
+    "pushed_at": "2022-02-08",
+    "license": null,
+    "size_kb": 0,
+    "desc": ""
+   },
+   {
+    "full_name": "SayuruUSJ/ProbassLK-Admin-frontend",
+    "stars": 0,
+    "pushed_at": "2026-07-25",
+    "license": null,
+    "size_kb": 94,
+    "desc": ""
+   },
+   {
+    "full_name": "SayuruUSJ/ProbassLK-frontend-",
+    "stars": 0,
+    "pushed_at": "2026-07-26",
+    "license": null,
+    "size_kb": 60232,
+    "desc": ""
+   }
+  ],
+  "repo": "sagagugit/ProBASS",
+  "exists": true,
+  "license": null,
+  "size_kb": 2394,
+  "default_branch": "main",
+  "pushed_at": "2026-05-24T07:44:26Z",
+  "n_files": 10,
+  "n_data_files": 2,
+  "pred_candidates": [],
+  "large_data_files": [
+   {
+    "path": "Data_set.xlsx",
+    "size": 520566
+   }
+  ],
+  "status": "DATA_ONLY_NO_PRED"
+ },
+ "CATH-ddG": {
+  "note": "V6.0 已获取基线预测列",
+  "repo": "ak422/CATH-ddG",
+  "exists": true,
+  "license": null,
+  "size_kb": 211284,
+  "default_branch": "main",
+  "pushed_at": "2025-12-15T14:46:32Z",
+  "n_files": 70,
+  "n_data_files": 6,
+  "pred_candidates": [
+   {
+    "path": "data/SKEMPI2/skempi_v2_with_all_results.csv",
+    "size": 1291260
+   }
+  ],
+  "large_data_files": [
+   {
+    "path": "data/SKEMPI2/skempi_v2.csv",
+    "size": 1291260
+   },
+   {
+    "path": "data/SKEMPI2/skempi_v2_cache/skempi_v2.csv",
+    "size": 1291260
+   },
+   {
+    "path": "data/SKEMPI2/skempi_v2_with_all_results.csv",
+    "size": 1291260
+   }
+  ],
+  "status": "PREDICTION_FOUND"
+ },
+ "DSSA-PPI": {
+  "note": "V6.0 已获取 8 模型预测列",
+  "repo": "Agitw/DSSA-PPI",
+  "exists": true,
+  "license": "MIT",
+  "size_kb": 2466,
+  "default_branch": "main",
+  "pushed_at": "2026-01-24T08:04:59Z",
+  "n_files": 99,
+  "n_data_files": 33,
+  "pred_candidates": [
+   {
+    "path": "validate_on_RBM/pred_vs_exp.csv",
+    "size": 43492
+   }
+  ],
+  "large_data_files": [
+   {
+    "path": "validate_on_RBM/DMS_exp.csv",
+    "size": 3278367
+   },
+   {
+    "path": "datasets/S4169/train_fold_4.csv",
+    "size": 252858
+   },
+   {
+    "path": "datasets/S4169/train_fold_2.csv",
+    "size": 251931
+   },
+   {
+    "path": "datasets/S4169/train_fold_3.csv",
+    "size": 251511
+   },
+   {
+    "path": "datasets/S4169/train_fold_5.csv",
+    "size": 246050
+   },
+   {
+    "path": "datasets/S4169/train_fold_1.csv",
+    "size": 245709
+   }
+  ],
+  "status": "PREDICTION_FOUND"
+ }
+}

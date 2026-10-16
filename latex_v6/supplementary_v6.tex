@@ -1,0 +1,590 @@
+%=====================================================================
+%  v6 Supplementary Information -> LaTeX
+%=====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Consolas}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array,tabularx}
+\usepackage{graphicx}
+\newcommand{\figfit}[2][\textwidth]{%
+  \includegraphics[width=#1,height=0.82\textheight,keepaspectratio]{#2}}
+\usepackage{pdflscape}
+\usepackage{threeparttable}
+\usepackage[super,square,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\graphicspath{{../figures_v5/}{./}}
+
+\title{\bfseries Supplementary Information\\[6pt]
+\large Disentangling Between-Target and Within-Target Signal in
+PPI $\Delta\Delta G$ Benchmarking}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Supplementary Note 1 | Derivation of the covariance decomposition}
+Write the true value and prediction for mutation $i$ in target $c$ as
+$y_{ci} = \mu_c + \varepsilon_{ci}$ and
+$\hat{y}_{ci} = \hat{\mu}_c + \hat{\varepsilon}_{ci}$. Expanding
+$\operatorname{Cov}(y,\hat{y})$ gives a between-target term and a within-target term,
+\begin{equation}
+  \operatorname{Cov}(y,\hat{y})
+  = \frac{1}{N}\sum_{c} n_c \left(\mu_c - \bar{\mu}\right)
+    \left(\hat{\mu}_c - \bar{\hat{\mu}}\right)
+  + \frac{1}{N}\sum_{c}\sum_{i} \varepsilon_{ci}\,\hat{\varepsilon}_{ci};
+\end{equation}
+all cross terms vanish identically because within-target deviations have zero mean in every
+target. Dividing by $\sigma_y \sigma_{\hat{y}}$ gives $C_{\mathrm{B}}$ and
+$C_{\mathrm{W}}$ and establishes
+\begin{equation}
+  r_{\mathrm{pooled}} = C_{\mathrm{B}} + C_{\mathrm{W}}
+\end{equation}
+exactly. The identity residual is reported as a quality-control quantity (observed maximum
+$3.331 \times 10^{-16}$). Because $C_{\mathrm{B}}$ and $C_{\mathrm{W}}$ share the same
+denominator they are covariance-signal contributions on a common scale, not independent
+correlations.
+
+\section*{Supplementary Note 2 | Row universes and their relationship}
+The controlled-split universe (7,523 rows, 230 complexes,
+112 structural families) is the full set of forward-paired true
+$\Delta\Delta G$ observations. It contains 4,812 distinct
+(complex, mutation) keys; 2,011 keys carry more than one
+experimental record and 1,405 of those disagree in
+$\Delta\Delta G$.\par
+The annotation namespace (4,473 rows, 214 targets,
+108 structural families) is the feature-complete subset of that universe:
+every one of its 4,473 rows is present in the controlled-split universe, and
+3,050 rows of the latter are absent from it
+(16 targets and
+4 structural families are not
+represented). The two row counts therefore differ because they describe different
+filtering stages of the same underlying data, not different benchmarks.\par
+The target-count distributions are:
+\begin{center}\begin{tabular}{@{}lrrrrr@{}}\toprule
+Universe & $n \geq 1$ & $n \geq 2$ & $n \geq 3$ & $n \geq 5$ & $n \geq 10$ \\
+\midrule
+Controlled-split (7,523) & 230 & 203 & 193 & 172 & 118 \\
+Annotation (4,473) & 214 & 180 & 164 & 130 & 85 \\
+\bottomrule\end{tabular}\end{center}
+
+\section*{Supplementary Note 3 | Matched universes and row-set fingerprints}
+Each prediction output received a SHA-256 fingerprint of its sorted row identifiers.
+Cross-model comparison was performed only between outputs sharing a fingerprint; raw metrics
+were never compared across fingerprints.
+
+\begin{landscape}
+\begin{table}[h]
+  \centering
+  \scriptsize
+  \begin{threeparttable}
+  \caption{Matched-evaluation strata and row-set fingerprints.}
+  \label{tab:s1}
+  \begin{tabular}{@{}lllrrrrrrr@{}}
+    \toprule
+    Universe & Artifact & Row-set fingerprint & Rows ($N$) & Targets & Families
+      & Targets ($n \geq 3$) & Targets ($n \geq 5$) & Targets ($n \geq 10$) & Models \\
+    \midrule
+U\_V6\_2\_split4\_8d003e00 & V6\_2\_split4 & 8d003e00057d932a & 7523 & 230 & 112 & 193 & 172 & 118 & 36 \\
+U\_V6\_2\_1\_donly\_8d003e00 & V6\_2\_1\_donly & 8d003e00057d932a & 7523 & 230 & 112 & 193 & 172 & 118 & 6 \\
+U\_V7.1\_z\_34b45937 & V7.1\_z & 34b45937b42b7114 & 4473 & 214 & 108 & 164 & 130 & 85 & 10 \\
+U\_V7.0\_ablation\_34b45937 & V7.0\_ablation & 34b45937b42b7114 & 4473 & 214 & 108 & 164 & 130 & 85 & 35 \\
+U\_V7.0\_losses\_34b45937 & V7.0\_losses & 34b45937b42b7114 & 4473 & 214 & 108 & 164 & 130 & 85 & 16 \\
+U\_V7.1\_lsr\_34b45937 & V7.1\_lsr & 34b45937b42b7114 & 4473 & 214 & 108 & 164 & 130 & 85 & 6 \\
+U\_V7.2R1\_full\_2f5a5c2e & V7.2R1\_full & 2f5a5c2e4832298a & 4233 & 174 & 91 & 142 & 116 & 75 & 12 \\
+U\_V7.2R2\_trackB\_e81801ff & V7.2R2\_trackB & e81801ff29e01b7b & 4219 & 174 & 91 & 142 & 115 & 75 & 12 \\
+U\_V7.2R3\_ppi\_17487417 & V7.2R3\_ppi & 174874178847c9bc & 3452 & 132 & 70 & 105 & 87 & 55 & 15 \\
+U\_V7.2R3\_noise\_17487417 & V7.2R3\_noise & 174874178847c9bc & 3452 & 132 & 70 & 105 & 87 & 55 & 12 \\
+U\_V7.3\_physics\_f8c33c7e & V7.3\_physics & f8c33c7e987d72c8 & 3351 & 166 & 86 & 129 & 102 & 65 & 30 \\
+U\_V7.2\_nested\_c08fe062 & V7.2\_nested & c08fe062e64e4cba & 1807 & 13 & 9 & 13 & 12 & 11 & 12 \\
+    \bottomrule
+  \end{tabular}
+  \end{threeparttable}
+\end{table}
+\end{landscape}
+
+\section*{Supplementary Note 4 | Derivation of fixed-$K$ shortlist discriminability}
+To separate candidate-set geometry from the realised magnitudes of $\Delta\Delta G$, we
+evaluate fixed-$K$ selection against a \emph{canonical rank-linear utility reference}.
+Rank the $n$ candidates of a target from most to least favourable and assign the $j$-th
+ranked candidate the reference utility
+\begin{equation}
+  u_{(j)} = n - j + 1, \qquad j = 1,\dots,n,
+  \label{eq:rankutil}
+\end{equation}
+so that utilities are equally spaced and strictly decreasing in rank. This reference is a
+deliberate idealisation: it fixes the \emph{shape} of the utility profile and asks how much
+of the total utility a size-$K$ shortlist can capture as a function of $n$ and $K$ alone.
+It is not a model of any particular $\Delta\Delta G$ distribution, and the resulting
+quantity is a geometric surrogate for shortlist discriminability rather than a property of
+real affinity data. Let $E = \sum_{i \in S_K} u_i / \sum_{i=1}^{n} u_i$ denote the share of
+total utility captured by a selected set $S_K$ of $K$ candidates. Two references define the
+discriminable interval:
+\begin{itemize}
+  \item $E_{\max}$ --- the share attained by the optimal (oracle) selection. Under
+        Eq.~\eqref{eq:rankutil} the top $K$ candidates have utilities
+        $n, n-1, \dots, n-K+1$, and $\sum_{j=1}^{n} u_{(j)} = n(n+1)/2$, so
+        \begin{equation}
+          E_{\max} = \frac{\sum_{j=1}^{K}(n-j+1)}{n(n+1)/2}
+                    = \frac{K\,(2n-K+1)}{n\,(n+1)} .
+          \label{eq:emax}
+        \end{equation}
+        The closed form depends on the reference Eq.~\eqref{eq:rankutil}; for an arbitrary
+        utility vector $E_{\max} = \sum_{j\le K} u_{(j)} / \sum_{j\le n} u_{(j)}$ and is
+        not determined by $n$ and $K$ alone.
+  \item $E_{\mathrm{rand}}$ --- the share expected under uniform random selection of $K$ of the
+        $n$ candidates. By symmetry of the uniform distribution over subsets, each candidate
+        is selected with probability $K/n$ irrespective of its utility, so
+        \begin{equation}
+          E_{\mathrm{rand}} = \frac{K}{n} .
+          \label{eq:erand}
+        \end{equation}
+        This reference is exact under any utility profile, including the rank-linear one.
+\end{itemize}
+The discriminable interval is their difference, which simplifies in closed form:
+\begin{equation}
+  D(n,K) \;=\; E_{\max} - E_{\mathrm{rand}}
+  \;=\; \frac{K(2n-K+1)}{n(n+1)} - \frac{K}{n}
+  \;=\; \frac{K\,(n-K)}{n\,(n+1)} .
+  \label{eq:dnk}
+\end{equation}
+For $n \leq K$ every candidate is selected, hence $E_{\max} = E_{\mathrm{rand}} = 1$ and
+$D = 0$ identically: such targets carry no information for fixed-$K$ shortlist metrics.
+Treating $n$ as continuous and differentiating Eq.~\eqref{eq:dnk},
+\begin{equation}
+  \frac{\mathrm{d}D}{\mathrm{d}n}
+  = K\,\frac{(n+1) - (n-K)(2n+1)}{n^{2}(n+1)^{2}} = 0
+  \;\Longrightarrow\; n - K = \frac{n(n+1)}{2n+1},
+\end{equation}
+whose positive root is
+\begin{equation}
+  n^{*} = K + \sqrt{K^{2} + K} .
+  \label{eq:nstar2}
+\end{equation}
+For $K = 10$ this gives $n^{*} \approx 20.5$, with $D(20) = 0.2381$ and
+$D(50) = 0.1569$; in the present benchmark $53$ of $130$ targets with $n \geq 5$ ($40.8\%$)
+fall in the degenerate regime $n \leq K$.
+
+\emph{Applicability and limits.} Everything above is conditional on the canonical
+rank-linear reference Eq.~\eqref{eq:rankutil}. $D(n,K)$ is therefore a geometric
+surrogate for shortlist discriminability, not a statement about arbitrary utility
+distributions: with any other utility profile $E_{\max}$ changes and so does $D$.
+It is not a model-performance metric, it does not measure the $\Delta\Delta G$ utility range
+of any real dataset, and it does not imply that SKEMPI $\Delta\Delta G$ values are
+intrinsically similar. Establishing that would require an analysis using realised utility
+magnitudes, which we did not perform. What is reference-free is the degenerate case: for
+$n \leq K$ a size-$K$ shortlist selects every candidate, so $E_{\max} = E_{\mathrm{rand}} = 1$
+and $D = 0$ under \emph{any} utility profile. That statement, and the target counts it
+implies, does not depend on Eq.~\eqref{eq:rankutil}.
+
+\section*{Supplementary Note 5 | Weighted covariance decomposition}
+The five target-weighting schemes act on the \emph{target level}: predictions are unchanged and
+only the weight assigned to each target varies. Let $n_c$ be the number of mutations in target
+$c$. Because the schemes are named after target-aggregation rules, we take the target weight
+$A_c$ as the quantity they describe,
+\begin{equation}
+  A_c \in \{\, n_c,\; 1,\; \sqrt{n_c},\; \log(1+n_c),\; \min(n_c, 30) \,\}
+  \label{eq:Ac}
+\end{equation}
+for the per-mutation, per-target, $\sqrt{n}$, logarithmic and capped schemes respectively, and
+split it evenly across the target's rows:
+\begin{equation}
+  w_{ci} = \frac{A_c}{n_c}, \qquad
+  \sum_{i} w_{ci} = A_c, \qquad
+  A = \sum_{c}\sum_{i} w_{ci} = \sum_{c} A_c .
+  \label{eq:wci}
+\end{equation}
+This is the only reading under which the scheme names are accurate: with $A_c = 1$ each target
+carries total weight $1$ regardless of its size (genuinely per-target), and with $A_c = n_c$
+every row carries weight $1$ (genuinely per-mutation). Writing $w_{ci} = a_c$ instead --- the
+literal form present in the original implementation --- would give each target total weight
+$n_c a_c$, so that the ``per-target'' scheme would still let large targets dominate; we
+therefore treat that literal reading as a sensitivity variant
+(Eq.~\eqref{eq:sens} below).
+
+Under the measure in Eq.~\eqref{eq:wci} the weighted means and variances are
+\begin{equation}
+  \bar{y}_w = \frac{1}{A}\sum_{c}\sum_{i} w_{ci}\, y_{ci}, \qquad
+  \sigma^{2}_{y,w} = \frac{1}{A}\sum_{c}\sum_{i} w_{ci}\,(y_{ci} - \bar{y}_w)^{2},
+  \label{eq:means}
+\end{equation}
+and likewise for $\hat{y}$. Because $w_{ci} = A_c/n_c$ is constant within a target, the
+within-target mean is the ordinary target mean,
+\begin{equation}
+  B_{y,c} \;=\; \frac{\sum_i w_{ci}\, y_{ci}}{\sum_i w_{ci}} \;=\; \bar{y}_c .
+  \label{eq:byc}
+\end{equation}
+With $\varepsilon_{ci} = y_{ci} - B_{y,c}$ and
+$\hat{\varepsilon}_{ci} = \hat{y}_{ci} - B_{\hat{y},c}$, the components are
+\begin{align}
+  C_{\mathrm{B},w} &= \frac{\sum_{c} A_c\,
+      \bigl(B_{y,c} - \bar{y}_w\bigr)\bigl(B_{\hat{y},c} - \bar{\hat{y}}_w\bigr)}
+      {A\,\sigma_{y,w}\,\sigma_{\hat{y},w}}, \label{eq:cbw}\\[4pt]
+  C_{\mathrm{W},w} &= \frac{\sum_{c}\sum_{i} w_{ci}\,
+      \varepsilon_{ci}\,\hat{\varepsilon}_{ci}}
+      {A\,\sigma_{y,w}\,\sigma_{\hat{y},w}}. \label{eq:cww}
+\end{align}
+Substituting $y_{ci} = B_{y,c} + \varepsilon_{ci}$ and
+$\hat{y}_{ci} = B_{\hat{y},c} + \hat{\varepsilon}_{ci}$ into
+$A\,\sigma_{y,w}\sigma_{\hat{y},w}\,r_w = \operatorname{Cov}_w(y,\hat{y})$ gives
+\begin{equation}
+  \sum_{c}\sum_{i} w_{ci}\,(y_{ci} - \bar{y}_w)(\hat{y}_{ci} - \bar{\hat{y}}_w)
+  = \underbrace{\sum_{c} A_c
+      \bigl(B_{y,c} - \bar{y}_w\bigr)\bigl(B_{\hat{y},c} - \bar{\hat{y}}_w\bigr)}_{
+      \text{Eq.~\eqref{eq:cbw}}}
+  + \underbrace{\sum_{c}\sum_{i} w_{ci}\,\varepsilon_{ci}\hat{\varepsilon}_{ci}}_{
+      \text{Eq.~\eqref{eq:cww}}},
+  \label{eq:cross}
+\end{equation}
+because for each target $\sum_i w_{ci}\varepsilon_{ci} = 0$ and
+$\sum_i w_{ci}\hat{\varepsilon}_{ci} = 0$, so both cross terms vanish. Hence
+\begin{equation}
+  r_w \;=\; C_{\mathrm{B},w} + C_{\mathrm{W},w}
+  \label{eq:identity-w}
+\end{equation}
+holds exactly for every scheme and every evaluation instance. Verified numerically on all 109
+configurations crossed with all five schemes (545 instances): maximum absolute residual
+$5.6 \times 10^{-17}$.
+
+\emph{Sensitivity to the weighting reading.} If instead the row weight is taken literally as
+$w_{ci} = a_c$ with $a_c$ given by Eq.~\eqref{eq:Ac}, the target total weight becomes
+$n_c a_c$ and the same algebra applies with
+\begin{equation}
+  w^{\mathrm{sens}}_{ci} = a_c, \qquad \sum_i w^{\mathrm{sens}}_{ci} = n_c\,a_c .
+  \label{eq:sens}
+\end{equation}
+The identity still holds exactly, because numerator and denominator share one measure. The two
+readings differ only in \emph{what a scheme equalises}, and therefore in the size of the
+reported components:
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Quantity & Eq.~\eqref{eq:wci} (primary) & Eq.~\eqref{eq:sens} (sensitivity) \\
+\midrule
+Median cross-scheme range of $C_{\mathrm{B}}$ & 0.3052 & 0.0930 \\
+Median cross-scheme range of $C_{\mathrm{W}}$ & 0.1240 & 0.0624 \\
+$C_{\mathrm{B}}$ sign reversals (any magnitude) & 40/109 & 44/109 \\
+$C_{\mathrm{B}}$ sign reversals with $|C_{\mathrm{B}}|>0.005$ & 34/109 & 32/109 \\
+$C_{\mathrm{W}}$ sign reversals (any magnitude) & 5/109 & 0/109 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Both readings agree on the qualitative conclusion: the between-target component is markedly
+less stable across weighting conventions than the within-target component (a larger
+cross-scheme range and many more sign reversals), so a reported decomposition must state its
+weighting scheme. They disagree on whether $C_{\mathrm{W}}$ ever reverses sign
+(5/109 under the primary reading versus 0/109 under the sensitivity reading),
+and on the absolute magnitude of the ranges; the main text quotes the primary reading and
+reports the sensitivity here.
+
+\section*{Supplementary Note 6 | Duplicate-key sensitivity}
+The controlled-split universe contains 7{,}523 mutation records but only 4{,}812 distinct
+(complex, mutation) keys: 2{,}011 keys carry more than one experimental record, and 1{,}405 of
+those disagree in $\Delta\Delta G$. This raises a legitimate concern: could part of the
+random-split performance, and hence part of the apparent collapse under family-out-of-domain
+evaluation, be an artefact of the same key appearing more than once in the evaluation set?
+
+Because the stored prediction artifacts do not retain per-row fold assignments, the split
+cannot be regenerated here; we therefore quantify the sensitivity \emph{within} the stored
+evaluation set by recomputing every quantity under three key treatments:
+\begin{itemize}
+  \item \textbf{ALL} --- all 7{,}523 records (the reported analysis);
+  \item \textbf{FIRST} --- one record per key, keeping the first occurrence (4{,}812 records);
+  \item \textbf{MEAN} --- one record per key, with $y$ and $\hat{y}$ both averaged within the
+        key (4{,}812 records).
+\end{itemize}
+The decomposition used here is the unweighted identity of Supplementary Note 1, and was
+verified to reproduce the frozen per-configuration values to 3.3e-16 across the 36
+controlled-split configurations.
+
+\begin{center}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Regime & Key treatment & Median $r$ & Median $C_{\mathrm{B}}$
+  & Median $C_{\mathrm{W}}$ & Median macro $\rho$ \\
+\midrule
+Random & ALL & +0.6844 & $+0.4275$ & $+0.2591$ & 0.0707 \\
+Random & FIRST & $+0.6378$ & $+0.3920$ & $+0.2465$ & 0.0886 \\
+Random & MEAN & $+0.6338$ & $+0.3705$ & $+0.2647$ & 0.0977 \\
+\midrule
+Family-OOD & ALL & +0.1508 & $-0.0072$ & $+0.1580$ & 0.0377 \\
+Family-OOD & FIRST & $+0.1614$ & $-0.0122$ & $+0.1759$ & 0.0354 \\
+Family-OOD & MEAN & $+0.2181$ & $+0.0197$ & $+0.1956$ & 0.0347 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The paired Random $\to$ Family-OOD differences are:
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Key treatment & $\Delta r$ & $\Delta C_{\mathrm{B}}$ & $\Delta C_{\mathrm{W}}$
+  & Between-target share \\
+\midrule
+ALL   & -0.5332 & -0.4324 & -0.1011 & 81.0\,\% \\
+FIRST & -0.4733 & -0.4027 & -0.0706 & 85.1\,\% \\
+MEAN  & -0.4266 & -0.3476 & -0.0671 & 83.8\,\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Three observations follow. First, collapsing duplicate keys \emph{reduces} the random-split
+correlation (+0.6844 to $+0.6378$ under FIRST) while slightly \emph{increasing} the
+family-out-of-domain correlation (+0.1508 to $+0.1614$); the collapse is therefore, if
+anything, understated rather than inflated by repeated records. Second, $\Delta C_{\mathrm{B}}$
+remains large and negative under every treatment, and its share of the summed absolute
+component change lies between 81.0\,\% and 85.1\,\%: the qualitative conclusion that the
+between-target component carries most of the decline does not depend on how repeated keys are
+handled. Third, the magnitude of the decline is sensitive to the treatment
+(-0.5332 versus -0.4266), so the absolute size of the collapse should be quoted with the key
+treatment stated.
+
+\emph{Limits.} This is an evaluation-set-internal sensitivity analysis. It cannot rule out
+duplicate-key leakage across the train/test boundary, because that requires regenerating the
+splits under key-level grouping and retraining, which the stored artifacts do not permit and
+which we did not perform. The 1{,}405 keys with disagreeing $\Delta\Delta G$ values also
+indicate that a (complex, mutation) key does not always identify a unique experimental
+condition; determining whether those conditions should enter the key definition is a
+data-curation decision that we did not make.
+
+\section*{Supplementary Note 7 | External coverage and common intersection}
+The five external methods are annotation columns of the same published SKEMPI table, mapped to
+the annotation namespace through the normalised key of
+\texttt{scripts/v8\_1/05\_external\_clean.py}. Each method has its own pattern of missing
+entries, so the uniquely mapped subsets differ slightly in size: Flex-ddG maps 1{,}755 rows,
+DDGPred 1{,}756, and FoldX, ESM-IF and proteinMPNN 1{,}776, out of 1{,}781 uniquely mappable
+rows. Because all five columns originate from the same annotation universe and share common
+row identifiers, we can remove the coverage imbalance by restricting every method to
+their common row intersection.
+
+\begin{center}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Method & Rows & Targets ($n \geq 5$) & Pooled Pearson & Macro Spearman
+  & $C_{\mathrm{B}}$ & $C_{\mathrm{W}}$ & RMSE \\
+\midrule
+\multicolumn{8}{@{}l@{}}{\emph{(A) variable coverage --- each method's own uniquely mapped subset, raw columns}} \\
+DDGPred & 1,756 & 65 & +0.2406 & +0.1287 & +0.0715 & +0.1690 & 2.1262 \\
+ddG\_FoldX & 1,776 & 66 & +0.2089 & +0.1088 & +0.0657 & +0.1433 & 2.3691 \\
+Flex-ddG & 1,755 & 65 & +0.2028 & +0.1092 & +0.0478 & +0.1550 & 2.1636 \\
+proteinMPNN & 1,776 & 66 & +0.1509 & +0.0320 & +0.0699 & +0.0810 & --- \\
+ESM-IF & 1,776 & 66 & -0.2250 & +0.0213 & -0.1149 & -0.1101 & --- \\
+\midrule
+\multicolumn{8}{@{}l@{}}{\emph{(A$'$) same subsets, exploratory sign-oriented values}} \\
+DDGPred & 1,756 & 65 & +0.2406 & +0.1287 & +0.0715 & +0.1690 & 2.1262 \\
+ddG\_FoldX & 1,776 & 66 & +0.2089 & +0.1088 & +0.0657 & +0.1433 & 2.3691 \\
+Flex-ddG & 1,755 & 65 & +0.2028 & +0.1092 & +0.0478 & +0.1550 & 2.1636 \\
+proteinMPNN & 1,776 & 66 & +0.1509 & +0.0320 & +0.0699 & +0.0810 & --- \\
+ESM-IF & 1,776 & 66 & +0.2250 & -0.0213 & +0.1149 & +0.1101 & --- \\
+\midrule
+\multicolumn{8}{@{}l@{}}{\emph{(B) common intersection --- raw columns}} \\
+DDGPred & 1,752 & 65 & +0.2410 & +0.1287 & +0.0714 & +0.1696 & 2.1265 \\
+ddG\_FoldX & 1,752 & 65 & +0.2121 & +0.0967 & +0.0681 & +0.1440 & 2.3623 \\
+Flex-ddG & 1,752 & 65 & +0.2036 & +0.1092 & +0.0476 & +0.1560 & 2.1620 \\
+proteinMPNN & 1,752 & 65 & +0.1497 & +0.0430 & +0.0690 & +0.0807 & --- \\
+ESM-IF & 1,752 & 65 & -0.2225 & +0.0099 & -0.1113 & -0.1112 & --- \\
+\midrule
+\multicolumn{8}{@{}l@{}}{\emph{(B$'$) common intersection, exploratory sign-oriented values}} \\
+DDGPred & 1,752 & 65 & +0.2410 & +0.1287 & +0.0714 & +0.1696 & 2.1265 \\
+ddG\_FoldX & 1,752 & 65 & +0.2121 & +0.0967 & +0.0681 & +0.1440 & 2.3623 \\
+Flex-ddG & 1,752 & 65 & +0.2036 & +0.1092 & +0.0476 & +0.1560 & 2.1620 \\
+proteinMPNN & 1,752 & 65 & +0.1497 & +0.0430 & +0.0690 & +0.0807 & --- \\
+ESM-IF & 1,752 & 65 & +0.2225 & -0.0099 & +0.1113 & +0.1112 & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+RMSE is shown only for Flex-ddG, FoldX and DDGPred, whose columns are on a $\Delta\Delta G$-like
+scale; ESM-IF and proteinMPNN return dimensionless mutation-effect scores for which an error in
+kcal/mol is not defined (Supplementary Note~8).
+
+The common intersection retains 1,752 of the 1{,}781 uniquely mappable rows (98.4\,\%),
+covering 163 targets of which 65 have $n \geq 5$. Comparing the treatments:
+
+\begin{itemize}
+  \item on the \emph{raw} columns the two rankings are strongly positively aligned
+        (Spearman $\rho = +0.90$, exact permutation $p = 0.083$), as in the main text;
+  \item after the exploratory sign-orientation the same ranks show no significant agreement
+        ($\rho = +0.30$, $p = 0.683$), and ESM-IF moves from last to second on the
+        pooled axis while remaining last on the within-target axis;
+  \item in both treatments DDGPred ranks first on both axes.
+\end{itemize}
+
+The coverage imbalance is therefore not what drives the difference between the two conclusions:
+restricting all five methods to their common intersection leaves the raw panel aligned and the
+oriented panel unaligned, exactly as in the full uniquely mapped subsets. The panel remains small
+(five methods) and underpowered under either treatment.
+
+\section*{Supplementary Note 8 | Provenance, orientation and units of the external predictions}
+The five external methods are not separate downloads: they are five annotation columns of the
+SKEMPI-derived protein--protein interaction table distributed with CATH-ddG (main text
+reference~3; \texttt{skempi\_v2.csv}), which we read directly without modification
+(Table~S3). This matters for interpretation in three ways.
+
+\emph{The published columns are preserved unmodified.} For every method we ingest the
+published column exactly as distributed. We apply no affine rescaling and no recalibration,
+and the raw values reproduce to four decimals when recomputed directly from the published
+columns on the same uniquely mapped subset (e.g.\ ESM-IF $-0.2250$ and ProteinMPNN
+$+0.1509$). The only operation applied anywhere is the single sign multiplier $o_m$
+introduced in the main text Methods (\emph{Score orientation and its limits}). It is used
+solely for the exploratory
+orientation sensitivity and never modifies the raw columns reported here; because $o_m$ is
+selected from the evaluation data, that sensitivity is explicitly label-informed, whereas
+the raw analysis requires no such choice and is the primary result. So the reported raw
+correlations are properties
+of the published scores and not of any post-processing.
+
+\emph{Orientation.} The analysed response is $y = \Delta\Delta G = \Delta G_{\mathrm{mut}} -
+\Delta G_{\mathrm{WT}}$ (Methods), so $y > 0$ denotes weaker binding. We use every column
+exactly as published and apply no sign inversion to any method. Two consequences are worth
+stating. First, the Flex-ddG, FoldX and DDGPred columns are already oriented so that larger
+values mean weaker binding, matching $y$, and they correlate positively with it. Second, the
+published ESM-IF column is oriented the other way --- larger values mean stronger binding ---
+which is why it carries a negative pooled correlation ($-0.2250$). That negative sign is a
+property of the published ESM-IF score on this benchmark, not an artefact of our processing;
+we did not flip it, and we flag it here so that the sign is not misread.
+
+\emph{Units, and why two RMSE values are not reported.} Flex-ddG, FoldX and DDGPred are
+quantitative $\Delta\Delta G$-like predictors (signed binding-affinity changes) whose
+columns span standard deviations of
+1.31, 1.92 and 1.55 respectively, so an error in kcal/mol is meaningful for them. ESM-IF and
+ProteinMPNN are inverse-folding sequence models: their published outputs are dimensionless
+mutation-effect scores with standard deviations of 0.093 and 0.012, roughly two orders of
+magnitude narrower than the experimental $\Delta\Delta G$ spread. An RMSE expressed in kcal/mol
+is therefore not defined for those two columns, and we report ``---''. This follows the rule
+already applied elsewhere in this work, where a dimensionless mutation-effect score is recorded
+with \texttt{RMSE = NOT\_APPLICABLE} rather than converted into an apparent energy error.
+Correlation-based quantities --- pooled Pearson, macro within-target Spearman,
+$C_{\mathrm{B}}$ and $C_{\mathrm{W}}$ --- are invariant to positive affine rescaling and are reported for all five methods.
+
+\emph{Sign orientation for cross-method comparison.} The published columns are not all in
+the same direction. Using within-complex correlations against $y = \Delta\Delta G$ --- which
+removes between-target differences and therefore isolates direction rather than predictive
+skill --- Flex-ddG, FoldX, DDGPred and ProteinMPNN are aligned with $y$ ($+0.49$, $+0.49$,
+$+0.51$ and $+0.30$), whereas ESM-IF is anti-aligned ($-0.24$): its published score is larger
+for stronger binding. For the cross-method performance comparison we therefore apply a
+sign-only orientation, $s^{\mathrm{aligned}} = o_m\, s^{\mathrm{raw}}$ with
+$o_{\mathrm{ESM\text{-}IF}} = -1$ and $o_m = +1$ for the other four (Methods). This uses no
+evaluation labels and no recalibration, and it changes no information content: it only flips
+the sign of the correlation-like quantities. Table~S3 records each raw column with its raw
+orientation and $o_m$, so the unmodified provenance and the aligned values are both
+auditable. The effect on the panel is material: used raw the two axes appear strongly
+aligned ($\rho = +0.90$, $p = 0.083$), whereas after orientation they show no significant
+agreement ($\rho = +0.30$, $p = 0.683$). We report the oriented values throughout and state
+the raw alternative explicitly, since with five methods neither reaches adequate power.
+
+\emph{Scope of the comparison.} Because the two score-based methods are not on the same scale
+as the three energy-based ones, the RMSE column in Table~3 should not be used to compare across
+those groups; the pooled and within-target correlations are the quantities that are comparable
+across all five methods, and they are the basis of the rank-agreement analysis.
+
+
+\section*{Machine-readable supplementary data}
+The full model-family and configuration registry --- including per-configuration row-set
+fingerprints, split regimes, training-provenance flags, ablation and representative markers,
+and the representative-selection reason --- is supplied as machine-readable Supplementary
+Data (\texttt{MODEL\_FAMILY\_REGISTRY.csv}, \texttt{MATCHED\_UNIVERSE\_REGISTRY.csv},
+\texttt{FROZEN\_INPUT\_MANIFEST.csv}). The weighting audit configurations are enumerated in
+\texttt{WEIGHTING\_FINAL.csv}, and the duplicate-key sensitivity in
+\texttt{DUPLICATE\_KEY\_SENSITIVITY.csv}.
+
+\section*{Supplementary Figures}
+\begin{landscape}\begin{table}[h]\centering\footnotesize
+\begin{threeparttable}
+\caption{Model pools used in the rank-agreement sensitivity analysis.}\label{tab:s4pools}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Row-set hash & Level & Models & Method families & Green models & $\rho$(pooled, macro) \\
+\midrule
+f8c33c7e & A & 30 & 10 & 30 & +0.8242 \\
+8d003e00 & A & 42 & 12 & 12 & +0.7596 \\
+8d003e00 & C & 12 & 12 & 3 & +0.6923 \\
+c08fe062 & A & 12 & 4 & 12 & +0.5315 \\
+2f5a5c2e & A & 12 & 4 & 12 & +0.4336 \\
+e81801ff & A & 12 & 4 & 12 & +0.3427 \\
+17487417 & C & 9 & 9 & 9 & +0.0769 \\
+17487417 & A & 27 & 9 & 27 & -0.0174 \\
+34b45937 & C & 34 & 34 & 27 & -0.0716 \\
+34b45937 & A & 67 & 34 & 60 & -0.2685 \\
+\bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \emph{Level A} ($\ast$LA in Figure~S3) denotes a provenance-clean stratum:
+every listed model is free of known supervised training overlap with the evaluation
+rows. \emph{Level C} ($\ast$LC) denotes a permissive-split stratum, where the pool
+includes configurations trained under random/complex/\texttt{seq40} partitions whose
+evaluation rows may overlap their training folds; these are retained only for this
+sensitivity analysis. `Green models' is the number of models in the pool flagged
+provenance-clean. Pools within the same row-set hash are comparable because they
+share identical evaluation rows; pools with different hashes are not.
+\end{tablenotes}\end{threeparttable}\end{table}\end{landscape}
+\begin{landscape}\begin{table}[h]\centering\scriptsize
+\begin{threeparttable}
+\caption{Provenance and score semantics of the external prediction columns.}\label{tab:s3external}
+\begin{tabular}{@{}llllll@{}}\toprule
+Method & Raw column & Units & Raw orientation & $o_m$ & RMSE meaningful? \\
+\midrule
+Flex-ddG & \texttt{Flex-ddG} & kcal/mol (ΔΔG-like scaling) & higher = larger $\Delta\Delta G$ (weaker binding) & $+1$ & yes \\
+DDGPred & \texttt{DDGPred} & kcal/mol (ΔΔG-like scaling) & higher = larger $\Delta\Delta G$ (weaker binding) & $+1$ & yes \\
+ddG\_FoldX & \texttt{ddG\_FoldX} & kcal/mol (ΔΔG-like scaling) & higher = larger $\Delta\Delta G$ (weaker binding) & $+1$ & yes \\
+ESM-IF & \texttt{ESM-IF} & dimensionless (no kcal/mol scaling) & higher = stronger binding & $-1$ & \textbf{no} \\
+proteinMPNN & \texttt{proteinMPNN} & dimensionless (no kcal/mol scaling) & higher = larger $\Delta\Delta G$ (weaker binding) & $+1$ & \textbf{no} \\
+    \bottomrule\end{tabular}
+\begin{tablenotes}\footnotesize
+\item All five columns come from one published annotation table of SKEMPI-derived
+protein--protein interaction mutations. Raw values are used exactly as published; we apply
+no affine calibration and no recalibration against the evaluation labels. The $o_m$ column
+records the sign multiplier used only for the exploratory orientation sensitivity.
+We verified this by recomputing every reported correlation directly from the raw columns,
+which reproduces the reported values to four decimals for all five methods. Raw standard
+deviations differ by more than an order of magnitude across columns (1.31, 1.55 and 1.92
+for the three $\Delta\Delta G$-like predictors versus 0.093 and 0.012 for the two
+inverse-folding scores), which is why an RMSE in kcal/mol is defined only for the former.
+\end{tablenotes}\end{threeparttable}\end{table}\end{landscape}
+
+\begin{figure}[htbp]
+  \centering
+  \figfit{FigS1_matched_universe_strata_EN.pdf}
+  \caption{Matched-evaluation strata grouped by SHA-256 row-set
+  fingerprints. Each bar is one prediction output; outputs sharing a fingerprint are
+  directly comparable with each other and with no others.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \figfit{FigS2_capability_heatmap_provenance_clean_EN.pdf}
+  \caption{Capability profiles of matched, provenance-clean ablation
+  variants (seed 42). Rows are controlled ablation variants of one local-physics method
+  family, not independent methods. Values are standardised within each metric for visual
+  comparison only; raw values are printed in each cell.}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \figfit{FigS3_pool_sensitivity_rank_agreement_EN.pdf}
+  \caption{Pool sensitivity of cross-metric rank agreement across
+  matched strata. Each bar is one model pool within one row-set stratum, labelled
+  \texttt{artifact (row-set hash / level)}. \emph{LA} denotes a provenance-clean stratum
+  (no known supervised training overlap) and \emph{LC} a permissive-split stratum retained
+  only for this sensitivity analysis; pool sizes, method-family counts and inclusion
+  criteria are listed in Table~S2 below. Within one row-set hash the evaluation rows are
+  identical and only the set of included model families changes, which moves the agreement
+  between pooled Pearson and macro within-target Spearman from $-0.26$ to $+0.82$; this
+  quantity is therefore reported as a range rather than a single value.}
+
+\end{figure}
+
+\end{document}

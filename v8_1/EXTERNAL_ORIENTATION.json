@@ -1,0 +1,170 @@
+{
+  "multipliers": {
+    "Flex-ddG": 1,
+    "DDGPred": 1,
+    "ddG_FoldX": 1,
+    "ESM-IF": -1,
+    "proteinMPNN": 1
+  },
+  "raw": {
+    "ranking_pooled": [
+      "DDGPred",
+      "ddG_FoldX",
+      "Flex-ddG",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "ranking_macro": [
+      "DDGPred",
+      "Flex-ddG",
+      "ddG_FoldX",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "mismatch_positions": [
+      2,
+      3
+    ],
+    "rho": 0.8999999999999998,
+    "tau": 0.7999999999999999,
+    "perm_p": 0.08333333333333333
+  },
+  "oriented": {
+    "ranking_pooled": [
+      "DDGPred",
+      "ESM-IF",
+      "ddG_FoldX",
+      "Flex-ddG",
+      "proteinMPNN"
+    ],
+    "ranking_macro": [
+      "DDGPred",
+      "Flex-ddG",
+      "ddG_FoldX",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "mismatch_positions": [
+      2,
+      4,
+      5
+    ],
+    "rho": 0.3,
+    "tau": 0.19999999999999998,
+    "perm_p": 0.6833333333333333
+  },
+  "table_raw": [
+    {
+      "model": "DDGPred",
+      "n_rows": 1756,
+      "n_ge5": 65,
+      "overall_pearson": 0.2405714579106252,
+      "macro_spearman": 0.1286893341975168,
+      "C_B_row": 0.07153390222508,
+      "C_W": 0.1690375556855453,
+      "rmse": 2.1261740451947686,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "ddG_FoldX",
+      "n_rows": 1776,
+      "n_ge5": 66,
+      "overall_pearson": 0.2089130565869603,
+      "macro_spearman": 0.1087835512587406,
+      "C_B_row": 0.0656589060534725,
+      "C_W": 0.1432541505334878,
+      "rmse": 2.3690733540657254,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "Flex-ddG",
+      "n_rows": 1755,
+      "n_ge5": 65,
+      "overall_pearson": 0.2028319134654042,
+      "macro_spearman": 0.1091502273038732,
+      "C_B_row": 0.0477983998110654,
+      "C_W": 0.1550335136543388,
+      "rmse": 2.1635921095988926,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "proteinMPNN",
+      "n_rows": 1776,
+      "n_ge5": 66,
+      "overall_pearson": 0.1509084587303287,
+      "macro_spearman": 0.0319943201633902,
+      "C_B_row": 0.0699361289387913,
+      "C_W": 0.0809723297915373,
+      "rmse": 2.319861374758483,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "ESM-IF",
+      "n_rows": 1776,
+      "n_ge5": 66,
+      "overall_pearson": -0.2249853465208935,
+      "macro_spearman": 0.0212910013825643,
+      "C_B_row": -0.1149016021323118,
+      "C_W": -0.1100837443885816,
+      "rmse": 2.3587120952328497,
+      "orientation_multiplier": -1
+    }
+  ],
+  "table_oriented": [
+    {
+      "model": "DDGPred",
+      "n_rows": 1756,
+      "n_ge5": 65,
+      "overall_pearson": 0.2405714579106252,
+      "macro_spearman": 0.1286893341975168,
+      "C_B_row": 0.07153390222508,
+      "C_W": 0.1690375556855453,
+      "rmse": 2.1261740451947686,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "ESM-IF",
+      "n_rows": 1776,
+      "n_ge5": 66,
+      "overall_pearson": 0.2249853465208935,
+      "macro_spearman": -0.0212910013825643,
+      "C_B_row": 0.1149016021323118,
+      "C_W": 0.1100837443885816,
+      "rmse": 2.3587120952328497,
+      "orientation_multiplier": -1
+    },
+    {
+      "model": "ddG_FoldX",
+      "n_rows": 1776,
+      "n_ge5": 66,
+      "overall_pearson": 0.2089130565869603,
+      "macro_spearman": 0.1087835512587406,
+      "C_B_row": 0.0656589060534725,
+      "C_W": 0.1432541505334878,
+      "rmse": 2.3690733540657254,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "Flex-ddG",
+      "n_rows": 1755,
+      "n_ge5": 65,
+      "overall_pearson": 0.2028319134654042,
+      "macro_spearman": 0.1091502273038732,
+      "C_B_row": 0.0477983998110654,
+      "C_W": 0.1550335136543388,
+      "rmse": 2.1635921095988926,
+      "orientation_multiplier": 1
+    },
+    {
+      "model": "proteinMPNN",
+      "n_rows": 1776,
+      "n_ge5": 66,
+      "overall_pearson": 0.1509084587303287,
+      "macro_spearman": 0.0319943201633902,
+      "C_B_row": 0.0699361289387913,
+      "C_W": 0.0809723297915373,
+      "rmse": 2.319861374758483,
+      "orientation_multiplier": 1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "audit_limitation": "本轮的**外部仓库**审计（官方 row-level 预测 / 处理数据 / split 定义 / checkpoint / 推理脚本）**未执行**。原因是本地 web 检索在本会话中不稳定，无法可靠核实官方资源的真实存在与许可条款。",
+  "what_was_done": "对**项目内**全部文件做了 20 个外部方法名的正则扫描（含 CATH 变体），以判断是否有可直接复用的 row-level 预测。",
+  "honesty_rule": "**不臆造外部资源的存在**。未审计一律记 NOT_AUDITED，而不是假定存在或不存在。",
+  "impact_on_V8": "V8 的 H1/H2/H4 结论完全基于**内部**模型，不依赖外部方法；H3 已判 FAIL；因此外部审计缺失**不阻塞**当前结论，但**阻塞**「外部模型是否复现能力分化」这一条（§68 STRONGLY_SUPPORTED 的条件之一）。",
+  "gpu_decision": "GPU_REQUIRED = NO。理由：§51 要求 GPU 仅在某模型**官方 row-level 预测不可得**、**官方 checkpoint 与推理代码可得**、且 **CPU 不可行** 时才启用。本轮连第一步（官方预测是否可得）都未核实，因此**不具备申请 GPU 的依据**。",
+  "next_action": "PHASE 13 应在具备稳定网络时重做：优先 PPIformer / CATH-ddG / PreFold-dG / HERMES / Prompt-DDG / RDE-Network 的官方预测文件。"
+}

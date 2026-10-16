@@ -1,0 +1,166 @@
+{
+  "coverage_variable": {
+    "Flex-ddG": {
+      "n_rows": 1755,
+      "n_targets": 165,
+      "n_ge5": 65,
+      "pearson": 0.20283191346540425,
+      "C_B": 0.047798399811065415,
+      "C_W": 0.15503351365433884,
+      "macro": 0.10915022730387325,
+      "rmse": 2.1635921095988926,
+      "model": "Flex-ddG"
+    },
+    "DDGPred": {
+      "n_rows": 1756,
+      "n_targets": 165,
+      "n_ge5": 65,
+      "pearson": 0.24057145791062526,
+      "C_B": 0.07153390222507999,
+      "C_W": 0.16903755568554527,
+      "macro": 0.12868933419751688,
+      "rmse": 2.1261740451947686,
+      "model": "DDGPred"
+    },
+    "ddG_FoldX": {
+      "n_rows": 1776,
+      "n_targets": 166,
+      "n_ge5": 66,
+      "pearson": 0.20891305658696033,
+      "C_B": 0.06565890605347252,
+      "C_W": 0.1432541505334878,
+      "macro": 0.10878355125874062,
+      "rmse": 2.3690733540657254,
+      "model": "ddG_FoldX"
+    },
+    "ESM-IF": {
+      "n_rows": 1776,
+      "n_targets": 166,
+      "n_ge5": 66,
+      "pearson": -0.2249853465208935,
+      "C_B": -0.11490160213231185,
+      "C_W": -0.11008374438858165,
+      "macro": 0.021291001382564356,
+      "rmse": 2.3587120952328497,
+      "model": "ESM-IF"
+    },
+    "proteinMPNN": {
+      "n_rows": 1776,
+      "n_targets": 166,
+      "n_ge5": 66,
+      "pearson": 0.15090845873032877,
+      "C_B": 0.06993612893879139,
+      "C_W": 0.08097232979153737,
+      "macro": 0.031994320163390245,
+      "rmse": 2.319861374758483,
+      "model": "proteinMPNN"
+    }
+  },
+  "coverage_intersection": {
+    "Flex-ddG": {
+      "n_rows": 1752,
+      "n_targets": 163,
+      "n_ge5": 65,
+      "pearson": 0.203556466918798,
+      "C_B": 0.047571752266568366,
+      "C_W": 0.15598471465222963,
+      "macro": 0.10915022730387325,
+      "rmse": 2.1620037490716917,
+      "model": "Flex-ddG"
+    },
+    "DDGPred": {
+      "n_rows": 1752,
+      "n_targets": 163,
+      "n_ge5": 65,
+      "pearson": 0.24096558283807595,
+      "C_B": 0.07137356320870196,
+      "C_W": 0.169592019629374,
+      "macro": 0.12868933419751688,
+      "rmse": 2.126522103289824,
+      "model": "DDGPred"
+    },
+    "ddG_FoldX": {
+      "n_rows": 1752,
+      "n_targets": 163,
+      "n_ge5": 65,
+      "pearson": 0.21212511273391046,
+      "C_B": 0.06813108621391914,
+      "C_W": 0.14399402651999132,
+      "macro": 0.09671893680477923,
+      "rmse": 2.362262325207578,
+      "model": "ddG_FoldX"
+    },
+    "ESM-IF": {
+      "n_rows": 1752,
+      "n_targets": 163,
+      "n_ge5": 65,
+      "pearson": -0.22249044739930204,
+      "C_B": -0.11126219943172876,
+      "C_W": -0.11122824796757329,
+      "macro": 0.009915948616527297,
+      "rmse": 2.349599242345242,
+      "model": "ESM-IF"
+    },
+    "proteinMPNN": {
+      "n_rows": 1752,
+      "n_targets": 163,
+      "n_ge5": 65,
+      "pearson": 0.14973780052522934,
+      "C_B": 0.06901855026580085,
+      "C_W": 0.08071925025942847,
+      "macro": 0.04296658013639196,
+      "rmse": 2.3111040375681835,
+      "model": "proteinMPNN"
+    }
+  },
+  "rank_variable": {
+    "ranking_pooled": [
+      "DDGPred",
+      "ddG_FoldX",
+      "Flex-ddG",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "ranking_macro": [
+      "DDGPred",
+      "Flex-ddG",
+      "ddG_FoldX",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "swap_positions": [
+      2,
+      3
+    ],
+    "rho": 0.8999999999999998,
+    "tau": 0.7999999999999999,
+    "perm_p": 0.08333333333333333
+  },
+  "rank_intersection": {
+    "ranking_pooled": [
+      "DDGPred",
+      "ddG_FoldX",
+      "Flex-ddG",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "ranking_macro": [
+      "DDGPred",
+      "Flex-ddG",
+      "ddG_FoldX",
+      "proteinMPNN",
+      "ESM-IF"
+    ],
+    "swap_positions": [
+      2,
+      3
+    ],
+    "rho": 0.8999999999999998,
+    "tau": 0.7999999999999999,
+    "perm_p": 0.08333333333333333
+  },
+  "n_intersection_rows": 1752,
+  "n_intersection_targets": 163,
+  "n_intersection_ge5": 65,
+  "n_exact_unique": 1781
+}

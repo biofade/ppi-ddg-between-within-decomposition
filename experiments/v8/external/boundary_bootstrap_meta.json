@@ -1,0 +1,13 @@
+{
+  "n_boot_requested": 5000,
+  "n_valid": 5000,
+  "seed": 42,
+  "cluster_unit": "target",
+  "K": 10,
+  "min_n": 5,
+  "point_PERMISSIVE": -0.5578571428571428,
+  "point_STRICT": -0.32510821686090535,
+  "ci_overlap": true,
+  "verdict": "BOUNDARY_NOT_ROBUST",
+  "caveat": "两组模型不重叠但非随机分配（provenance 由键名推断）；bootstrap 只反映 target 抽样不确定性，不反映模型池选择不确定性。"
+}

@@ -1,0 +1,9 @@
+object,license,reuse
+Prompt-DDG code,MIT,ALLOWED
+Prompt-DDG DDG checkpoint,MIT(code),"NOT ALLOWED (SKEMPI-supervised, primary)"
+SiweiLab/ReCLIP source,see repo LICENSE,architecture reuse candidate
+RiverZ/reclip mutation XGBoost head,other,YELLOW; not in primary
+MINT checkpoint,MIT,"candidate (foundation, no task-label leakage found)"
+MINT bernett_mlp head,MIT,NOT in primary (task head)
+ESM2-650M,MIT,ALLOWED (generic)
+ESM2-8M,MIT,ALLOWED (generic)

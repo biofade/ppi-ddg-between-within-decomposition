@@ -1,0 +1,15 @@
+{
+  "universe": "U_HERMES_CANONICAL",
+  "n_rows": 2865,
+  "n_targets": 195,
+  "n_targets_ge5": 94,
+  "hermes_source": "StatPhysBio/hermes_experiments official row-level CSV",
+  "sign_convention": "hermes_proxy = -(log_proba_mt - log_proba_wt)",
+  "rho_overall_macro_internal": 0.474267096840114,
+  "rho_overall_macro_with_hermes": 0.4737203294644889,
+  "hermes_overall_pearson": 0.16881866393601294,
+  "hermes_macro_spearman": 0.052309008879931,
+  "hermes_percentile_overall": 0.4117647058823529,
+  "hermes_percentile_macro": 0.36764705882352944,
+  "verdict": "EXTERNAL_REPLICATION_DISCORDANT"
+}

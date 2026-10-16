@@ -1,0 +1,481 @@
+{
+  "checks": [
+    {
+      "check": "A. per-configuration r=C_B+C_W identity",
+      "status": "PASS",
+      "detail": "V6_2_split4 n=36, max|residual|=4.441e-16 (tol 1e-12)",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "B. Table 2 vs frozen source",
+      "status": "PASS",
+      "detail": "all 4 regimes x 5 metrics reproduced from all_models_by_rowset.csv",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "C. Table 2 in .tex == machine source",
+      "status": "PASS",
+      "detail": "parsed 4 rows from Table 2",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "D. Figure S2 / 1D vs ablation text",
+      "status": "PASS",
+      "detail": "F1/F2/F4/F8 four-metric values present in FigS2 vector text and ablation paragraph",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "E. Figure 4 geometry values",
+      "status": "PASS",
+      "detail": "D(20)=0.2381 D(50)=0.1569 n*=20.5 n<=K=40.8% (53/130)",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "F. Table 3 external values (sign-oriented)",
+      "status": "PASS",
+      "detail": "parsed 5 rows; all equal mu_c x raw from external_clean_profiles.csv",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "F2. external coverage claim",
+      "status": "PASS",
+      "detail": "coverage equal=False (counts {'Flex-ddG': 1755, 'DDGPred': 1756, 'ddG_FoldX': 1776, 'ESM-IF': 1776, 'proteinMPNN': 1776}); 'same mutations' claim present=False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "G. rank agreement recomputed",
+      "status": "PASS",
+      "detail": "rho=0.9000 exact perm p=0.0833 (n=5, 120 permutations); text contains 0.90=True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "G2. Flex-ddG/FoldX rank-swap text",
+      "status": "PASS",
+      "detail": "text states a single adjacent swap; old 'no rank reversal' claim absent=True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "H. Table S1 vs Figure S1",
+      "status": "PASS",
+      "detail": "12 strata; all row counts and hashes found in FigS1 vector text",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "I. fingerprints / row-id sets",
+      "status": "PASS",
+      "detail": "mas=7523 rows, canonical=4473 rows, subset relation holds",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "J. LaTeX build cleanly",
+      "status": "PASS",
+      "detail": "[source=log] main fatal=0 cite_undef=0 ref_undef=0 pages=15 | supp fatal=0 pages=12",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "K. 4,473 vs 7,523 universe explained",
+      "status": "PASS",
+      "detail": "canonical subset of mas = True; mas\\canon=3050 rows; Methods section + Supplementary Note 2 present",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "L. median-vs-exact wording",
+      "status": "PASS",
+      "detail": "Table 2 note + Figure 2 caption state marginal medians and per-configuration identity",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "M. 81.1% interpretation",
+      "status": "PASS",
+      "detail": "marginal-median attribution=0.8113; paired=0.8104; 95% CI=[0.7097198883539126, 0.8448723244877555]",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "N. Supplementary figure/table numbering",
+      "status": "PASS",
+      "detail": "S-prefix counters set = True; pool table label = tab:s4pools",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "O. D(n,K) derived with E_max/E_rand",
+      "status": "PASS",
+      "detail": "Supplementary Note 4 defines E_max, E_rand, derives D(n,K) and n*",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "P. LA/LC/* defined + pool table",
+      "status": "PASS",
+      "detail": "Figure S3 caption defines LA/LC; Table S4 lists pool composition",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "Q. weighted decomposition derived",
+      "status": "PASS",
+      "detail": "Supplementary Note 5 states a_c schemes and proves r_w = C_B,w + C_W,w",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "R. Data/code availability truthful",
+      "status": "WARNING",
+      "detail": "Manuscript states frozen hashes + machine-readable source + consistency checker are provided with the Supplementary Information, and that a public repository will be linked on acceptance. Repository URL not yet supplied (author action pending), so the availability statement currently relies on the SI package.",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "S. author metadata filled",
+      "status": "PASS",
+      "detail": "real author name, affiliation, corresponding email, ORCID and funding statement are present in the manuscript; no placeholder remains",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "T. no fabricated values",
+      "status": "PASS",
+      "detail": "Every headline number traced to v8_1 artifacts; Figure 3 histogram regenerated from the real 109 configuration values (previous hardcoded bins did not match the data and were replaced)",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "U. weighted identity r_w = C_B,w + C_W,w",
+      "status": "PASS",
+      "detail": "109 configs x 5 schemes; max|residual| = 5.551e-17; by scheme {'ROW': 5.551115123125783e-17, 'EQUAL': 5.551115123125783e-17, 'SQRT': 5.551115123125783e-17, 'LOG': 5.551115123125783e-17, 'CAP30': 5.551115123125783e-17}",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "V. Note 5 self-consistency (C_W not scheme-invariant)",
+      "status": "PASS",
+      "detail": "forbidden 'identical across all five schemes' present = False; C_W cross-scheme range median = 0.0624",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "W. weighting audit values use final (T) decomposition",
+      "status": "PASS",
+      "detail": "primary=T_target_total_mass w=a_c / n_c; range_C_B median=0.3052 range_C_W median=0.1240; text has 40/109 and 34/109; stale 35/109=False 0.0183=False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "X. D(n,K) states rank-linear utility reference",
+      "status": "PASS",
+      "detail": "rank-linear reference declared = True; removed universal-utility claim = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "Y. duplicate-key sensitivity analysis",
+      "status": "PASS",
+      "detail": "Note 6 present = True; decomposition verified to 3.3e-16; attribution 81.0-85.1% (direction preserved = True)",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "Z. supplementary caption numbering",
+      "status": "PASS",
+      "detail": "doubled prefixes found = 0; S-counter set = True; Table S4 caption clean = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AA. Figure 6 caption wording",
+      "status": "PASS",
+      "detail": "stale 'matched unambiguous mapping' wording present = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AB. Abstract novelty and attribution wording",
+      "status": "PASS",
+      "detail": "formulate-wording present = True; 'summed absolute component change' in Abstract/S = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AC. final PDF has no stale Figure 3 strings",
+      "status": "PASS",
+      "detail": "stale strings found in compiled PDF = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AD. final PDF Figure 3 shows updated values",
+      "status": "PASS",
+      "detail": "expected in PDF: ['0.3052', '0.1240', '34/109']; missing = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AE. final PDF Figure 3 C_W flip count matches audit",
+      "status": "PASS",
+      "detail": "C_W flip count 5/109 present in PDF = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AF. text and Figure 3 consistent on C_B",
+      "status": "PASS",
+      "detail": "range_C_B median 0.3052 appears in text = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AG. D(n,K) qualified in Abstract and Results",
+      "status": "PASS",
+      "detail": "abstract qualifier = True; results qualifier = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AH. supplementary table cross-references",
+      "status": "PASS",
+      "detail": "Figure S3 -> Table S2 = True; stale 'Table~S4 below' gone = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AI. final PDF embeds current figure sources",
+      "status": "PASS",
+      "detail": "9 figures compared against figures_v5 vector sources using the compiled PDF text; failures = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AJ. final PDF Figure 6 labels updated",
+      "status": "PASS",
+      "detail": "stale labels = none; required labels present = 3/3",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AK. in-figure attribution wording consistent",
+      "status": "PASS",
+      "detail": "stale 'absolute component decline' in PDF = False; 'summed absolute' present = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AL. external common-intersection sensitivity performed",
+      "status": "PASS",
+      "detail": "Note 7 present = True; intersection rows = 1752; pooled ranking identical = True; macro ranking identical = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AM. no unverified coverage claim, no 'de-replicated'",
+      "status": "PASS",
+      "detail": "stale claim present = False; 'de-replicated' present = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AN. Discussion does not generalise the surrogate",
+      "status": "PASS",
+      "detail": "over-general sentence present = False; qualified wording present = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AO. no RMSE for dimensionless external scores",
+      "status": "PASS",
+      "detail": "dimensionless scores = ['ESM-IF', 'proteinMPNN']; stale RMSE still in PDF = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AP. external provenance table and Note 8 present",
+      "status": "PASS",
+      "detail": "Table S3 (provenance) = True; Note 8 = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AQ. units caveat stated in main text",
+      "status": "PASS",
+      "detail": "dimensionless caveat present in manuscript = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AR. Table 3 marks undefined RMSE",
+      "status": "PASS",
+      "detail": "dash marker present in manuscript PDF = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AS. no Markdown emphasis residue in final PDFs",
+      "status": "PASS",
+      "detail": "bold residue = none; italic residue = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AT. DeltaDeltaG sign convention defined in Methods",
+      "status": "PASS",
+      "detail": "sign convention stated = True; 'no sign inversion' present = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AU. 'positive affine rescaling' wording",
+      "status": "PASS",
+      "detail": "positive-affine wording = True; unqualified wording gone = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AV. no absolute-value DDG notation for signed predictors",
+      "status": "PASS",
+      "detail": "absolute-value notation present = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AW. external source stated precisely",
+      "status": "PASS",
+      "detail": "CATH-ddG named = True; 'official per-mutation' removed = True; skempi_v2.csv named in supplement = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AX. Table S3 caption not self-duplicated",
+      "status": "PASS",
+      "detail": "self-duplicating caption present = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AY. ESM-IF sign-oriented in main table",
+      "status": "PASS",
+      "detail": "oriented ESM-IF values (+0.2250, -0.0213) in manuscript PDF = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "AZ. rank agreement reported with orientation stated",
+      "status": "PASS",
+      "detail": "raw rho 0.90 present=True; oriented rho 0.30 present=True; p=0.683 present=True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BB. no RMSE for dimensionless scores in supplement",
+      "status": "PASS",
+      "detail": "dimensionless rows with an RMSE value = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BC. provenance table records raw orientation and multiplier",
+      "status": "PASS",
+      "detail": "orientation column present = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BD. no incorrect 'same targets' claim",
+      "status": "PASS",
+      "detail": "stale phrase present = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BE. orientation is declared label-informed, not label-free",
+      "status": "PASS",
+      "detail": "stale 'uses no evaluation labels' = False; label-informed declaration = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BF. both raw and oriented results reported",
+      "status": "PASS",
+      "detail": "raw rho present = True; oriented rho present = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BG. no contradictory 'no sign flip' claim",
+      "status": "PASS",
+      "detail": "main=False supplement=False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BH. supplementary table reference is S3 not S4",
+      "status": "PASS",
+      "detail": "Table S3 present = True; 'Table S4' in supplement = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BI. Figure 6 Panel B title says sign-oriented",
+      "status": "PASS",
+      "detail": "sign-oriented title = True; stale raw title = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BJ. energy-type RMSE retained in common-intersection table",
+      "status": "PASS",
+      "detail": "Flex/FoldX/DDGPred RMSE present = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BK. orientation multiplier uses o_m, not mu_c",
+      "status": "PASS",
+      "detail": "o_m present in both = True; mu_c reused for orientation = False",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BL. Note 7 updated to oriented analysis",
+      "status": "PASS",
+      "detail": "oriented wording in Note 7 = True",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BM. seq40 is no longer identical to complex",
+      "status": "PASS",
+      "detail": "complex r=0.1931 vs seq40 r=0.1961 (identical=False)",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BN. no 'identical' claim for seq40 in final PDF",
+      "status": "PASS",
+      "detail": "stale wording found = none",
+      "old": null,
+      "new": null
+    },
+    {
+      "check": "BO. key-level leakage eliminated across all levels",
+      "status": "PASS",
+      "detail": "levels with keys crossing folds = none",
+      "old": null,
+      "new": null
+    }
+  ],
+  "generated_from": "validate_final_manuscript.py"
+}

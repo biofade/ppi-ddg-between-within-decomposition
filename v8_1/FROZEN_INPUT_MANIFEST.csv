@@ -1,0 +1,14 @@
+item,path,bytes,sha256_16,status
+canonical_target_labels.csv,experiments\v7_1_1\phase1_universe\canonical_target_labels.csv,66663,b0f43c069c0baf32,PRESENT
+OUTER_FOLDS_V7_2_manifest,experiments\v7_1_1\phase3_nested_cv\fold_manifest.csv,526,818ccd5d792fba6b,PRESENT
+OUTER_FOLDS_V7_2_protocol,experiments\v7_1_1\phase3_nested_cv\protocol.json,983,4f8aa6b5729a8a63,PRESENT
+v7_3_family_predictions,experiments\v7_3\phase5_rankers\family_predictions.npz,558556,98ca8acb5831ab2d,PRESENT
+v7_1_z_predictions,experiments\v7_1\phase2_rank\z_predictions.npz,504302,db2f4adc6e1daeb2,PRESENT
+v6_2_split4_predictions,experiments\v6_2\phase2_split4\split4_predictions.npz,1696726,ba711ea1b349836a,PRESENT
+v6_2_matched_analysis_set,experiments\v6_2\phase2_split4\matched_analysis_set.csv,754492,8d209eea08cc6058,PRESENT
+v7_2r_1_full_ranker,experiments\v7_2r_1\phase2_full_eval\full_ranker_predictions.npz,393550,fd3b528822aabd77,PRESENT
+v7_2r_2_trackB,experiments\v7_2r_2\phase5_eval\trackB_predictions.npz,392292,973578fdf9a82321,PRESENT
+v7_2r_3_ppi,experiments\v7_2r_3\phase5_eval\ppi_predictions.npz,363992,0b3f20e68309c6cc,PRESENT
+benchmark_scoreboard,experiments\v8\BENCHMARK_SCOREBOARD.csv,151499,23917786f81777b3,PRESENT
+hermes_predictions,F:\dsh\downloads\hermes_variants\HERMES_py000.csv,403691,810b875944fc47d3,PRESENT
+cathddg_skempi_table,F:\dsh\downloads\cathddg\skempi_v2.csv,1291260,6faee86bbf75f7f9,PRESENT

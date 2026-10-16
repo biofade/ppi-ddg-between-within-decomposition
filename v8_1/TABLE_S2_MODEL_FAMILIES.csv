@@ -1,0 +1,11 @@
+family,n_configs,n_seeds,ablation,primary_rep,rowset,n_rows,n_ge5,split,in_weighting,train_prov,rep_rule
+F0_Base,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F1_Base_Mut,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F2_Base_Static,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F3_Base_EnvPartner,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F4_Base_PartnerPert,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F5_Base_IntraPert,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F6_Partner_Intra,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F7_F6_Burial,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F8_Full,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set
+F9_PhysicsOnly,3,3,True,False,f8c33c7e987d72c8,3351,102,family_ood_ablation,False,supervised under family-OOD protocol (OUTE,ABLATION - not collapsed (matched ablation set

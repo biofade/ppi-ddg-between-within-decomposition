@@ -1,0 +1,15 @@
+tool,import,available,version,license_status,usable_primary,usable_secondary,reason
+NumPy,numpy,True,2.4.6,BSD-3,True,True,全部向量化运算基础
+SciPy,scipy,True,1.17.1,BSD-3,True,True,cKDTree 邻居搜索
+scikit-learn,sklearn,True,1.9.1,BSD-3,True,True,Ridge/ElasticNet 可解释基线
+LightGBM,lightgbm,True,4.7.0,MIT,True,True,主 learner（与历史比较一致）
+BioPython,Bio,True,1.88,Biopython License (BSD-like),True,True,PDB 解析 + ShrakeRupley SASA 后备
+FreeSASA (python bindings),freesasa,True,?,MIT,True,True,**确定性 SASA 引擎**（§20 首选）
+OpenMM,openmm,False,,MIT/LGPL,False,False,未安装；能量最小化需 GPU/长时
+PDBFixer,pdbfixer,False,,MIT,False,False,未安装
+ProDy,prody,False,,MIT,False,False,未安装
+MDAnalysis,MDAnalysis,False,,GPL-2.0+,False,False,未安装；GPL 需谨慎
+MDTraj,mdtraj,False,,LGPL-2.1,False,False,未安装
+FoldX @ F:\dsh\downloads\foldx,-,False,,**restricted (需商业许可)**,False,False,未安装 / 未找到；依 §8 不自动下载
+FoldX @ C:\Program Files\foldx,-,False,,**restricted (需商业许可)**,False,False,未安装 / 未找到；依 §8 不自动下载
+FoldX @ F:\DSH_Galatea\Affinity_Intelligence\tools\foldx,-,False,,**restricted (需商业许可)**,False,False,未安装 / 未找到；依 §8 不自动下载

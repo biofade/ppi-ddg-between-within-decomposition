@@ -1,0 +1,10 @@
+{
+ "n_rows": 3214,
+ "n_targets": 161,
+ "n_families": 85,
+ "gap_safe": 3,
+ "exclusions": {
+  "site_near_chain_gap": 39
+ },
+ "n_targets_with_gaps": 110
+}

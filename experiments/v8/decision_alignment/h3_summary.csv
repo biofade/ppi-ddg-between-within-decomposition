@@ -1,0 +1,3 @@
+universe,n_models,median_spearman_calibration_axis,median_spearman_ranking_axis,median_spearman_traditional_global,ranking_better_than_traditional,delta_rank_minus_trad
+U_CANONICAL,160,-0.042986508382440704,0.05506648399907807,-0.08781900022017862,True,0.14288548421925668
+U_MAS,42,0.3403380689476711,0.7172817428060478,0.02486675545964416,True,0.6924149873464037

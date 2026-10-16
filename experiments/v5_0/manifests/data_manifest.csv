@@ -1,0 +1,31 @@
+path,description,exists,size_bytes,sha256,n_rows,n_cols,mtime,note
+data/ppb_affinity_proteinea/filtered.csv,原始 PPB-Affinity filtered（划分来源）,1,5933651,852176677ee6a7bde914349f5677239ef92929d6e2e7ca8a467af177285cfa79,8210,21,2026-10-12 21:49:40,
+data/ppb_affinity_proteinea/raw.csv,原始 raw,1,8354190,15d25b80d7e3bcf01c073956b60940480997c0ccc3bd5d644b407a7468cda5a1,12051,20,2026-10-12 21:49:43,
+data/v2.4/skempi_v2_cleaned.csv,SKEMPI v2.0 清洗表,1,1568384,72eaccc14c370bb61d5053cba06702e315d381954dad77989dc970e1def6b357,6993,1,2026-10-13 09:06:57,
+features/v2.2_proteinea_features.csv,V2.2 物理+元数据特征表（V4/V5 主表）,1,11852893,134a406175c975541ae40aed37c3f824ad1519423620860fc2a710e100bf5314,8207,78,2026-10-12 21:54:30,
+features/features_v1.1.csv,V1.1 特征表（历史口径，标签口径不同）,1,4563068,00f2c10c8f45175da4abdbcf9272fb7d1479b1b9c56ccb8f60df3345b04e96b7,4750,80,2026-10-11 15:55:45,
+features/v2_esm2_cache.npz,pooled ESM-2 缓存（8207 行 × 640 × 2 链）,1,52481097,2b6fdcc331dd5030c70ffff557d3cdbc37111a0b10b7640267f5948a4345367b,8207,17,2026-10-13 00:04:14,"pdb_ids(8207,);lig_raw(8207, 640);lig_l2(8207, 640);rec_raw(8207, 640);rec_l2(8207, 640);interface_key(8207,);lig_md5(8207,);rec_md5(8207,)"
+features/v2_esm2_perres_v2.npz,per-residue 原始缓存（1.9 GB）,1,1913516901,2674145a580eb1713f78f537b34e010a614cc8f1ddeaec5bd925d675702cb3b2,6885,24,2026-10-13 12:08:16,"pdb_ids(6885,);interface_key(6885,);splits(6885,);lig_lengths(6885,);rec_lengths(6885,);lig_full_length(6885,);rec_full_length(6885,);lig_residue_ids(867502,)"
+features/v2.5_perres_cache.npz,per-residue 紧凑缓存（582 MB）,1,582502134,02c0eeb04fb70787571c73da59adc28bb6e91bdb451f9c9e86cdfc40650cf57b,6885,14,2026-10-13 12:27:47,"pdb_ids(6885,);splits(6885,);v22_row(6885,);pooled_row(6885,);lig_topk(6885, 32, 640);rec_topk(6885, 32, 640);lig_mask(6885, 32);rec_mask(6885, 32)"
+features/v2.5_energy_features_norm.csv,V2.5 归一化能量特征,1,2484878,3e5b6d62c1fa2ea51fbd8b9d44109bcbf7a39e5b26e1c0ebe5c7488cd5ba012a,3197,46,2026-10-13 13:18:13,
+features/v2.5_conservation_features.csv,V2.5 保守性代理,1,1586767,b8c0ad955494ed4ba5a9475aa777c6cf01dbd42879ee7dc8c60f76acdeb7465b,6885,15,2026-10-13 13:03:28,
+features/v2.5_coevolution_features.csv,V2.5 共变代理,1,481197,e81e544ef21b1aeaf989d6aff014c975d6342caeddec551afcb6a1589116ad6e,6885,7,2026-10-13 13:04:39,
+features/v2.5_thermo_features.csv,V2.5 热力学分解,1,223054,4dead9b597d08e5e963380021d43fe2c6a74739fdf8c58e4c2d68854e1489ded,6394,7,2026-10-13 13:17:41,
+features/v2.5_hotspot_weights.npz,V2.5 热点权重,1,4078480,2321e2731bc0e6b8f2a12dcef445c5b5eb9b939f73508961e5a6d80de6234830,6885,10,2026-10-13 13:04:57,"pdb_ids(6885,);lig_significance(6885, 32);rec_significance(6885, 32);lig_weight(6885, 32);lig_is_hot(6885, 32);rec_weight(6885, 32);rec_is_hot(6885, 32);w_hot()"
+data/v4.0/ddg_pairs.csv,V4 ΔΔG 配对表（含 forward+reverse）,1,2238640,e43b19d69a8b54efe5cc4b3e647e87657106e86c0007771c4fc8082ab0ce6c45,15052,17,2026-10-13 15:23:42,
+data/v4.0/ddg_groups.json,V4 每复合物 WT/mutant 结构,1,71652,78b329eb642b51eb50a2bc497c25d92203fdc55b5cdb41bd64d61f944e974f48,231,231,2026-10-13 15:23:42,"dict_keys=1A22,1A4Y,1ACB,1AHW,1AK4,1B2S"
+data/v4.0/ddg_split.json,V4 三重隔离 split（V5 起点）,1,82187,92d4e8d78f0778ff82f12896aeedc9607e5e8cf7c519ac2ebd7e135aff5b534d,8,8,2026-10-13 15:25:36,"dict_keys=pairs_file,definition,rules,counts,complexes,family_of_complex"
+data/v4.0/ddg_split_stratified.json,V4 诊断用均值对齐变体（非主划分）,1,66648,ad08e58e08e256f29a324a57996a810fd0ebc4649777719ca09c2e25a4680296,3,3,2026-10-13 16:01:56,"dict_keys=train,val,test"
+data/v4.0/ddg_benchmark/ddg_benchmark_pairs.csv,V4 benchmark 配对（7526 行）,1,1114463,14ec0e4eb82b3099c43f0a353b947ed1b98e006eef5a9e8822a0d3d7a91b297e,7526,17,2026-10-13 16:37:53,
+data/v4.0/ddg_benchmark/split.json,V4 benchmark split,1,79146,d9d570878e362d3044a724c8a00b917c48834d9c6ce41441af108d379a61802e,4,4,2026-10-13 16:37:53,"dict_keys=rules,counts,pair_index,family_of_complex"
+experiments/v4.0/innovation_results.csv,V4 创新 1 结果,1,1957,16dab7d8603f544382ff4bed24215639fdaf176e79aa5b84cacc92553f463312,9,15,2026-10-13 16:33:15,
+experiments/v4.0/innovation_predictions.npz,V4 创新 1 逐样本预测,1,56073,f786716fb145f93431a61dda3ab9925a24a4bdccf86fb184d3ef9004cf713fc5,1129,11,2026-10-13 16:33:15,"test_y(1129,);test_group(1129,);A_full_base_s42(1129,);A_full_base_s43(1129,);A_full_base_s44(1129,);B_D_only_s42(1129,);B_D_only_s43(1129,);B_D_only_s44(1129,)"
+experiments/v4.0/innovation2_results.csv,V4 创新 2 结果,1,1229,91fb7d4eaf36a12e5997171f4ac4016eb4855ee10f2ca71974150b3f99011ca4,6,13,2026-10-13 16:37:17,
+experiments/v4.0/innovation2_predictions.npz,V4 创新 2 逐样本预测 + OOF ΔG 辅助,1,76911,74ed94422b544802cadab7ee808488aeb9a9cb68ba7f7031f70229a0e7f0c1bc,1129,10,2026-10-13 16:37:17,"test_y(1129,);test_group(1129,);aux_dg_mut_oof(7523,);aux_dg_mut_test(1129,);C_D_fwd+rev_s42(1129,);C_D_fwd+rev_s43(1129,);C_D_fwd+rev_s44(1129,);C+DGaux_fwd+rev_s42(1129,)"
+experiments/v4.0/baselines/ddg_baseline_results.csv,V4 基线结果（含早停 bug 版）,1,1723,25c5da7901e4fa55c88e81ef563c5a8d3e37daf30dea3ee815af57fd4ece5993,5,19,2026-10-13 15:41:43,
+experiments/v4.0/baselines/ddg_baseline_predictions.npz,V4 基线预测,1,37033,68448a539b50f5d072e60448c14f59bd6ccaef9b8252eb0b6d06267283d9e35e,1129,7,2026-10-13 15:41:43,"test_y(1129,);test_group(1129,);B1_lgb_phys+esm2(1129,);B3_mlp_phys+esm2_s42(1129,);B3_mlp_phys+esm2_s43(1129,);B2_mlp_auxDG_lam0.3_s42(1129,);B2_mlp_auxDG_lam0.3_s43(1129,)"
+experiments/v4.0/baselines/ddg_lgb_curve.csv,V4 LightGBM 学习曲线,1,1516,16495ff6b1e15260cd4b20885fee697599343368203e3dfbf041aedbff4ce9db,8,12,2026-10-13 16:05:20,
+experiments/v4.0/baselines/ddg_split_variants.csv,V4 划分变体诊断,1,1914,82620424256b2e9f8f2525bf1d09c45c91e5a2ac2df899d4591a7a08fdf7886c,12,12,2026-10-13 16:01:56,
+features/v4.0_final_report.md,V4 最终报告,1,26049,04395a41c0a01ec78216b3e6207851b3b3a43a1c3dfda78d1a3dbb923e51ef41,,,2026-10-13 16:39:54,26049 bytes
+features/v4.0_all_results.csv,V4 全结果汇总,1,7349,dbdbd41ec8b7276ef3d7c7e18d2dcee3557ddf042d04f9c81d326abc1913e888,33,18,2026-10-13 16:39:01,
+features/v3.1_paper_summaries.md,V3.1 文献结构化（带页码）,1,49128,005c0f51f3f948f088ea9fc0528f5fcf56c44306d7e5bcbac64efb7803d469e5,,,2026-10-13 13:49:19,49128 bytes

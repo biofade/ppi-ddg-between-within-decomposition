@@ -1,0 +1,24 @@
+{
+  "official_source": "https://github.com/StatPhysBio/hermes_experiments/skempi/results/hermes_py_000_ft_cdna117k_ddg_st/",
+  "official_quantity": "log_proba_mt__minus__log_proba_wt",
+  "quantity_semantics": "dimensionless mutation-effect score = log P(mutant) - log P(wild-type) under a structure-conditioned inverse-folding model",
+  "training_task": "cDNA117k stability fine-tune (per official variant naming)",
+  "training_dataset": "cDNA117k (Stability-Oracle) for this variant; note: SKEMPI-binding fine-tuned variants are SEPARATE (hermes_*_ft_skempi_ddg_bi)",
+  "skempi_binding_label_exposure": "NOT for the cDNA117k variant used here; the model name must NOT be read as SKEMPI-supervised binding regression",
+  "prediction_semantics": "score only; NOT calibrated kcal/mol ddG",
+  "row_mapping": "canonical (PDB4, <wt><pos><mut>) exact match; 1:1 by pair_row",
+  "single_vs_multi_mutation": "single-point only in the primary matched set (multi-point rows do not map)",
+  "sign_convention": "hermes_proxy = -(log_proba_mt - log_proba_wt); aligned so that V8 ddG>0 = weaker binding; direction verified empirically (r=+0.1688 > 0)",
+  "RMSE": "NOT_APPLICABLE",
+  "MAE": "NOT_APPLICABLE",
+  "qc": {
+    "canonical_rows_before_merge": 4473,
+    "canonical_rows_after_merge": 4473,
+    "duplicate_canonical_row_id": 0,
+    "row_expansion": 0,
+    "exact_match_count": 2865,
+    "ambiguous_count": 0,
+    "unmatched_count": 1608,
+    "matched_single_point": 2865
+  }
+}

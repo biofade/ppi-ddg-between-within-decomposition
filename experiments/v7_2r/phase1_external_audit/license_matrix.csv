@@ -1,0 +1,6 @@
+model,license_code,license_weights,research_use_ok,status
+ESM-2 8M (small PLM),MIT,MIT,YES,GREEN
+Prompt-DDG,NOT DECLARED,NOT DECLARED,UNCERTAIN,**YELLOW**
+CATH-ddG (DDAffinity),NOT DECLARED,NOT DECLARED,UNCERTAIN,**RED（对本项目的 primary 评估）**
+ReCLIP,**other**,**other**,UNCERTAIN,**YELLOW（本轮由 GREEN 候选降级）**
+PreFold-dG,unknown,unknown,UNCERTAIN,**YELLOW / UNKNOWN**

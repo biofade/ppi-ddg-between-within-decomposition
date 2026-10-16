@@ -1,0 +1,3 @@
+pair,spearman,kendall
+U_norm_fixed vs macro_spearman,0.5643580202456687,0.3770189201661283
+U_norm_fixed vs overall_pearson,0.39699918570209347,0.3068953516213778

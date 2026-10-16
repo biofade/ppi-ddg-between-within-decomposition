@@ -1,0 +1,54 @@
+{
+ "confirmation": "PASS",
+ "n_boot": 5000,
+ "primary_contrasts": [
+  "F4-F1   (核心) partner 扰动 vs mutation 性质",
+  "F4-F5   partner 扰动 vs intra 扰动",
+  "F8-F0   完整物理扰动 vs Base"
+ ],
+ "checks": [
+  {
+   "contrast": "F4-F1   (核心) partner 扰动 vs mutation 性质",
+   "delta_macro": 0.0730796459602054,
+   "ci_low": 0.0208965224168804,
+   "ci_high": 0.1288583578776239,
+   "ci_excludes_zero": true,
+   "supported": true
+  },
+  {
+   "contrast": "F4-F5   partner 扰动 vs intra 扰动",
+   "delta_macro": 0.0727684850343548,
+   "ci_low": 0.0215246670411801,
+   "ci_high": 0.1264377717022822,
+   "ci_excludes_zero": true,
+   "supported": true
+  },
+  {
+   "contrast": "F4-F2   扰动 vs 静态几何（§37）",
+   "delta_macro": 0.0591187032448932,
+   "ci_low": -0.0019844765258368,
+   "ci_high": 0.120565987612485,
+   "ci_excludes_zero": false,
+   "supported": false
+  },
+  {
+   "contrast": "F8-F0   完整物理扰动 vs Base",
+   "delta_macro": 0.0907424435962561,
+   "ci_low": 0.0240607883596888,
+   "ci_high": 0.1651150474942277,
+   "ci_excludes_zero": true,
+   "supported": true
+  },
+  {
+   "contrast": "F4-real - F4_SHUFFLED_ENV",
+   "delta_macro": 0.0895937362868672,
+   "ci_low": 0.0374079957012271,
+   "ci_high": 0.1462388826927462,
+   "ci_excludes_zero": true,
+   "supported": true
+  }
+ ],
+ "gate_rule": "primary contrasts (F4-F1, F4-F5, F8-F0) must be positive with CI excluding 0",
+ "note": "F4-F2 is a SECONDARY/borderline contrast (V7.3 2000-run barely excluded 0); under 5000 it includes 0 -> must be reported as NOT SUPPORTED",
+ "generated": "2026-10-15T09:38:28"
+}

@@ -1,0 +1,24 @@
+artifact,key,reason,leakage_alert,action
+V7.1_z,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.2_nested,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.2R1_full,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.2R2_trackB,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.2R3_ppi,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.2R3_noise,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.3_physics,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.0_ablation,y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.0_ablation,L4_family_y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.0_ablation,L1_random_y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.0_losses,L4_family_y,exact label key pattern (`*_y`),True,EXCLUDED
+V7.1_lsr,y,exact label key pattern (`*_y`),True,EXCLUDED
+V6_2_split4,L1_random_y,exact label key pattern (`*_y`),True,EXCLUDED
+V6_2_split4,L2_complex_y,exact label key pattern (`*_y`),True,EXCLUDED
+V6_2_split4,L4_family_y,exact label key pattern (`*_y`),True,EXCLUDED
+V6_2_split4,L3_seq40_y,exact label key pattern (`*_y`),True,EXCLUDED
+V6_2_1_donly,L1_random_y,exact label key pattern (`*_y`),True,EXCLUDED
+V6_2_1_donly,L4_family_y,exact label key pattern (`*_y`),True,EXCLUDED
+ALL,y,ground-truth label array,True,EXCLUDED
+V6_2/V7_0,L1_random_y,exact label key (r>0.98 vs canonical y),True,EXCLUDED
+V6_2/V7_0,L2_complex_y,exact label key (r>0.98 vs canonical y),True,EXCLUDED
+V6_2/V7_0,L3_seq40_y,exact label key (r>0.98 vs canonical y),True,EXCLUDED
+V6_2/V7_0,L4_family_y,exact label key (r>0.98 vs canonical y),True,EXCLUDED

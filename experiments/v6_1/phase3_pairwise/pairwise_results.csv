@@ -1,0 +1,11 @@
+model_a,model_b,n_paired_complex,delta_mean,ci_low,ci_high,p_two_sided,significant,bootstrap_unit,n_boot,seed
+Flex-ddG,ESM-IF,21,0.383,0.2377,0.528,0.0004,True,complex,5000,42
+Flex-ddG,proteinMPNN,21,0.1931,-0.0197,0.3964,0.0684,False,complex,5000,42
+Flex-ddG,FoldX,21,0.0575,-0.0652,0.1863,0.3635,False,complex,5000,42
+FoldX,ESM-IF,21,0.3255,0.177,0.4854,0.0004,True,complex,5000,42
+FoldX,proteinMPNN,21,0.1356,-0.0496,0.315,0.1396,False,complex,5000,42
+ESM-IF,proteinMPNN,21,-0.1898,-0.3902,-0.0293,0.0184,True,complex,5000,42
+DDGPred,ESM-IF,21,0.2933,0.099,0.4951,0.0028,True,complex,5000,42
+DDGPred,proteinMPNN,21,0.1035,-0.0968,0.3073,0.3223,False,complex,5000,42
+DDGPred,Flex-ddG,21,-0.0896,-0.2205,0.0524,0.1672,False,complex,5000,42
+DDGPred,FoldX,21,-0.0321,-0.1945,0.1222,0.6847,False,complex,5000,42

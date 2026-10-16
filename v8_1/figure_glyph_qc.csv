@@ -1,0 +1,21 @@
+figure,cjk,font,missing_glyphs,result
+Fig1_capability_resolved_overview,False,['DejaVu Sans'],[],PASS
+Fig2_controlled_familyOOD_decomposition,False,['DejaVu Sans'],[],PASS
+Fig3_target_weighting_sensitivity,False,['DejaVu Sans'],[],PASS
+Fig4_fixed_K_candidate_geometry,False,['DejaVu Sans'],[],PASS
+Fig5_retrospective_remedy,False,['DejaVu Sans'],[],PASS
+Fig6_external_boundary,False,['DejaVu Sans'],[],PASS
+FigS1_matched_strata,False,['DejaVu Sans'],[],PASS
+FigS2_artifact_level_heatmap,False,['DejaVu Sans'],[],PASS
+FigS3_weighting_spaghetti,False,['DejaVu Sans'],[],PASS
+FigS4_pool_sensitivity,False,['DejaVu Sans'],[],PASS
+Fig1_capability_resolved_overview,True,['Microsoft YaHei'],[],PASS
+Fig2_controlled_familyOOD_decomposition,True,['Microsoft YaHei'],[],PASS
+Fig3_target_weighting_sensitivity,True,['Microsoft YaHei'],[],PASS
+Fig4_fixed_K_candidate_geometry,True,['Microsoft YaHei'],[],PASS
+Fig5_retrospective_remedy,True,['Microsoft YaHei'],[],PASS
+Fig6_external_boundary,True,['Microsoft YaHei'],[],PASS
+FigS1_matched_strata,True,['Microsoft YaHei'],[],PASS
+FigS2_artifact_level_heatmap,True,['Microsoft YaHei'],[],PASS
+FigS3_weighting_spaghetti,True,['Microsoft YaHei'],[],PASS
+FigS4_pool_sensitivity,True,['Microsoft YaHei'],[],PASS

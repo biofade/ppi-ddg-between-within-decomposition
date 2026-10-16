@@ -1,0 +1,29 @@
+{
+  "_note": "真实 metadata（由作者提供）。repository.url 待作者上传 GitHub 后填入。",
+
+  "authors": [
+    {
+      "given": "Le",
+      "family": "Yu",
+      "affiliation_key": "independent",
+      "is_corresponding": true,
+      "orcid": "0009-0000-8807-3973"
+    }
+  ],
+
+  "affiliation_keys": {
+    "independent": "Independent Researcher"
+  },
+
+  "corresponding_email": "biofader@sjtu.edu.cn",
+
+  "funding": "This work received no specific funding.",
+
+  "repository": {
+    "route": "public_repository",
+    "url": "TODO_PENDING_GITHUB_URL",
+    "doi": "",
+    "accession": "",
+    "license": "TODO: 建议 MIT（代码）+ CC-BY-4.0（数据/文本）"
+  }
+}

@@ -1,0 +1,758 @@
+{
+ "SAMAffinity": {
+  "slug": "iobio-zjut/SAMAffinity",
+  "url": "https://github.com/iobio-zjut/SAMAffinity",
+  "exists": true,
+  "license": "None",
+  "size_kb": 9299,
+  "default_branch": "main",
+  "pushed_at": "2025-12-15T03:12:17Z",
+  "n_files": 121,
+  "candidates": [
+   {
+    "path": "main/M1101/predict/pytorchtools.py",
+    "size": 1854
+   },
+   {
+    "path": "main/S1131/predict/pytorchtools.py",
+    "size": 1854
+   },
+   {
+    "path": "main/S4169/predict/pytorchtools.py",
+    "size": 1854
+   },
+   {
+    "path": "main/S645/predict/pytorchtools.py",
+    "size": 1854
+   },
+   {
+    "path": "main/M1101/predict/lookahead.py",
+    "size": 2476
+   },
+   {
+    "path": "main/S1131/predict/lookahead.py",
+    "size": 2476
+   },
+   {
+    "path": "main/S4169/predict/lookahead.py",
+    "size": 2476
+   },
+   {
+    "path": "main/S645/predict/lookahead.py",
+    "size": 2476
+   },
+   {
+    "path": "main/S645/predict/__pycache__/lookahead.cpython-37.pyc",
+    "size": 2554
+   },
+   {
+    "path": "main/M1101/predict/__pycache__/lookahead.cpython-37.pyc",
+    "size": 2555
+   },
+   {
+    "path": "main/S1131/predict/__pycache__/lookahead.cpython-37.pyc",
+    "size": 2555
+   },
+   {
+    "path": "main/S4169/predict/__pycache__/lookahead.cpython-37.pyc",
+    "size": 2555
+   },
+   {
+    "path": "main/S645/predict/__pycache__/Radam.cpython-37.pyc",
+    "size": 5552
+   },
+   {
+    "path": "main/M1101/predict/__pycache__/Radam.cpython-37.pyc",
+    "size": 5553
+   },
+   {
+    "path": "main/S1131/predict/__pycache__/Radam.cpython-37.pyc",
+    "size": 5553
+   },
+   {
+    "path": "main/S4169/predict/__pycache__/Radam.cpython-37.pyc",
+    "size": 5553
+   },
+   {
+    "path": "main/M1101/predict/Radam.py",
+    "size": 8262
+   },
+   {
+    "path": "main/S1131/predict/Radam.py",
+    "size": 8262
+   },
+   {
+    "path": "main/S4169/predict/Radam.py",
+    "size": 8262
+   },
+   {
+    "path": "main/S645/predict/Radam.py",
+    "size": 8262
+   },
+   {
+    "path": "main/S1131/predict/predict_S1131.py",
+    "size": 12942
+   },
+   {
+    "path": "main/S645/predict/__pycache__/model_S645.cpython-37.pyc",
+    "size": 13290
+   },
+   {
+    "path": "main/M1101/predict/__pycache__/model_M1101.cpython-37.pyc",
+    "size": 13292
+   },
+   {
+    "path": "main/M1101/predict/__pycache__/model_AB1101_v49.cpython-37.pyc",
+    "size": 13297
+   },
+   {
+    "path": "main/S4169/predict/predict_S4169.py",
+    "size": 13782
+   },
+   {
+    "path": "main/S1131/predict/__pycache__/model_S1131_v56.cpython-37.pyc",
+    "size": 15069
+   },
+   {
+    "path": "main/S645/predict/predict_S645.py",
+    "size": 15433
+   },
+   {
+    "path": "main/M1101/predict/predict_M1101.py",
+    "size": 15514
+   },
+   {
+    "path": "main/S4169/predict/__pycache__/model_S4169.cpython-37.pyc",
+    "size": 15832
+   },
+   {
+    "path": "main/M1101/predict/model_M1101.py",
+    "size": 17102
+   },
+   {
+    "path": "main/S645/predict/model_S645.py",
+    "size": 17102
+   },
+   {
+    "path": "main/S4169/predict/model_S4169.py",
+    "size": 19508
+   },
+   {
+    "path": "main/S1131/predict/model_S1131.py",
+    "size": 20804
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold8.csv",
+    "size": 72862
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold2.csv",
+    "size": 74695
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold1.csv",
+    "size": 74790
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold10.csv",
+    "size": 75886
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold9.csv",
+    "size": 75941
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold4.csv",
+    "size": 76512
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold5.csv",
+    "size": 76521
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold6.csv",
+    "size": 78436
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold3.csv",
+    "size": 78612
+   },
+   {
+    "path": "data/test_fold/S1131/S1131_test_fold7.csv",
+    "size": 79394
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold7.csv",
+    "size": 85254
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold10.csv",
+    "size": 92538
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold1.csv",
+    "size": 97784
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold6.csv",
+    "size": 98084
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold9.csv",
+    "size": 98603
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold5.csv",
+    "size": 101571
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold8.csv",
+    "size": 102811
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold2.csv",
+    "size": 103468
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold3.csv",
+    "size": 113024
+   },
+   {
+    "path": "data/test_fold/S645/S645_test_fold4.csv",
+    "size": 115883
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold2.csv",
+    "size": 148316
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold7.csv",
+    "size": 148740
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold9.csv",
+    "size": 150168
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold10.csv",
+    "size": 152791
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold6.csv",
+    "size": 153416
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold1.csv",
+    "size": 157518
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold4.csv",
+    "size": 159984
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold8.csv",
+    "size": 160509
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold5.csv",
+    "size": 164065
+   },
+   {
+    "path": "data/test_fold/M1101/M1101_test_fold3.csv",
+    "size": 172043
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold9.csv",
+    "size": 403576
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold10.csv",
+    "size": 411266
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold7.csv",
+    "size": 411911
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold6.csv",
+    "size": 429316
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold5.csv",
+    "size": 432004
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold2.csv",
+    "size": 432020
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold1.csv",
+    "size": 433829
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold4.csv",
+    "size": 436774
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold8.csv",
+    "size": 442144
+   },
+   {
+    "path": "data/test_fold/S4169/S4169_test_fold3.csv",
+    "size": 446643
+   }
+  ],
+  "downloaded": [
+   [
+    "main/M1101/predict/pytorchtools.py",
+    0,
+    "empty_or_blocked"
+   ],
+   [
+    "main/S1131/predict/pytorchtools.py",
+    1854,
+    "downloaded"
+   ],
+   [
+    "main/S4169/predict/pytorchtools.py",
+    1854,
+    "cached"
+   ],
+   [
+    "main/S645/predict/pytorchtools.py",
+    1854,
+    "cached"
+   ],
+   [
+    "main/M1101/predict/lookahead.py",
+    2476,
+    "downloaded"
+   ],
+   [
+    "main/S1131/predict/lookahead.py",
+    2476,
+    "cached"
+   ],
+   [
+    "main/S4169/predict/lookahead.py",
+    2476,
+    "cached"
+   ],
+   [
+    "main/S645/predict/lookahead.py",
+    2476,
+    "cached"
+   ],
+   [
+    "main/S645/predict/__pycache__/lookahead.cpython-37.pyc",
+    2554,
+    "downloaded"
+   ],
+   [
+    "main/M1101/predict/__pycache__/lookahead.cpython-37.pyc",
+    2554,
+    "cached"
+   ],
+   [
+    "main/S1131/predict/__pycache__/lookahead.cpython-37.pyc",
+    2554,
+    "cached"
+   ],
+   [
+    "main/S4169/predict/__pycache__/lookahead.cpython-37.pyc",
+    2554,
+    "cached"
+   ],
+   [
+    "main/S645/predict/__pycache__/Radam.cpython-37.pyc",
+    5552,
+    "downloaded"
+   ],
+   [
+    "main/M1101/predict/__pycache__/Radam.cpython-37.pyc",
+    5552,
+    "cached"
+   ],
+   [
+    "main/S1131/predict/__pycache__/Radam.cpython-37.pyc",
+    5552,
+    "cached"
+   ],
+   [
+    "main/S4169/predict/__pycache__/Radam.cpython-37.pyc",
+    5552,
+    "cached"
+   ],
+   [
+    "main/M1101/predict/Radam.py",
+    8262,
+    "downloaded"
+   ],
+   [
+    "main/S1131/predict/Radam.py",
+    8262,
+    "cached"
+   ],
+   [
+    "main/S4169/predict/Radam.py",
+    8262,
+    "cached"
+   ],
+   [
+    "main/S645/predict/Radam.py",
+    8262,
+    "cached"
+   ],
+   [
+    "main/S1131/predict/predict_S1131.py",
+    12942,
+    "downloaded"
+   ],
+   [
+    "main/S645/predict/__pycache__/model_S645.cpython-37.pyc",
+    13290,
+    "downloaded"
+   ],
+   [
+    "main/M1101/predict/__pycache__/model_M1101.cpython-37.pyc",
+    13292,
+    "downloaded"
+   ],
+   [
+    "main/M1101/predict/__pycache__/model_AB1101_v49.cpython-37.pyc",
+    13297,
+    "downloaded"
+   ],
+   [
+    "main/S4169/predict/predict_S4169.py",
+    13782,
+    "downloaded"
+   ],
+   [
+    "main/S1131/predict/__pycache__/model_S1131_v56.cpython-37.pyc",
+    15069,
+    "downloaded"
+   ],
+   [
+    "main/S645/predict/predict_S645.py",
+    15433,
+    "downloaded"
+   ],
+   [
+    "main/M1101/predict/predict_M1101.py",
+    15514,
+    "downloaded"
+   ],
+   [
+    "main/S4169/predict/__pycache__/model_S4169.cpython-37.pyc",
+    15832,
+    "downloaded"
+   ],
+   [
+    "main/M1101/predict/model_M1101.py",
+    17102,
+    "downloaded"
+   ],
+   [
+    "main/S645/predict/model_S645.py",
+    17102,
+    "downloaded"
+   ],
+   [
+    "main/S4169/predict/model_S4169.py",
+    19508,
+    "downloaded"
+   ],
+   [
+    "main/S1131/predict/model_S1131.py",
+    20804,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold8.csv",
+    72862,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold2.csv",
+    74695,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold1.csv",
+    74790,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold10.csv",
+    75886,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold9.csv",
+    75941,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold4.csv",
+    76512,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold5.csv",
+    76521,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold6.csv",
+    78436,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold3.csv",
+    78612,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S1131/S1131_test_fold7.csv",
+    79394,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold7.csv",
+    85254,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold10.csv",
+    92538,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold1.csv",
+    97784,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold6.csv",
+    98084,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold9.csv",
+    98603,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold5.csv",
+    101571,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold8.csv",
+    102811,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold2.csv",
+    103468,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold3.csv",
+    113024,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S645/S645_test_fold4.csv",
+    115883,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold2.csv",
+    148316,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold7.csv",
+    148740,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold9.csv",
+    150168,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold10.csv",
+    152791,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold6.csv",
+    153416,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold1.csv",
+    157518,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold4.csv",
+    159984,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold8.csv",
+    160509,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold5.csv",
+    164065,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/M1101/M1101_test_fold3.csv",
+    172043,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold9.csv",
+    403576,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold10.csv",
+    411266,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold7.csv",
+    411911,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold6.csv",
+    429316,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold5.csv",
+    432004,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold2.csv",
+    432020,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold1.csv",
+    433829,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold4.csv",
+    436774,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold8.csv",
+    442144,
+    "downloaded"
+   ],
+   [
+    "data/test_fold/S4169/S4169_test_fold3.csv",
+    446643,
+    "downloaded"
+   ]
+  ]
+ },
+ "MINT": {
+  "slug": "VarunUllanat/mint",
+  "url": "https://github.com/VarunUllanat/mint",
+  "exists": true,
+  "license": "MIT",
+  "size_kb": 3615,
+  "default_branch": "main",
+  "pushed_at": "2026-06-15T16:56:53Z",
+  "n_files": 68,
+  "candidates": [
+   {
+    "path": "mint/helpers/predict.py",
+    "size": 428
+   },
+   {
+    "path": "downstream/CovidVariants/calculate_metrics.ipynb",
+    "size": 3353
+   }
+  ],
+  "downloaded": [
+   [
+    "mint/helpers/predict.py",
+    428,
+    "downloaded"
+   ],
+   [
+    "downstream/CovidVariants/calculate_metrics.ipynb",
+    3353,
+    "downloaded"
+   ]
+  ]
+ },
+ "DSSA-PPI": {
+  "slug": "Agitw/DSSA-PPI",
+  "url": "https://github.com/Agitw/DSSA-PPI",
+  "exists": true,
+  "license": "MIT",
+  "size_kb": 2466,
+  "default_branch": "main",
+  "pushed_at": "2026-01-24T08:04:59Z",
+  "n_files": 99,
+  "candidates": [
+   {
+    "path": "validate_on_RBM/pred_vs_exp.csv",
+    "size": 43492
+   },
+   {
+    "path": "validate_on_RBM/pred_heatmap_6e0j_RBM.png",
+    "size": 106582
+   },
+   {
+    "path": "validate_on_RBM/RBM_baselines_comparison_ddG.csv",
+    "size": 174025
+   }
+  ],
+  "downloaded": [
+   [
+    "validate_on_RBM/pred_vs_exp.csv",
+    43492,
+    "downloaded"
+   ],
+   [
+    "validate_on_RBM/pred_heatmap_6e0j_RBM.png",
+    106582,
+    "downloaded"
+   ],
+   [
+    "validate_on_RBM/RBM_baselines_comparison_ddG.csv",
+    174025,
+    "downloaded"
+   ]
+  ]
+ },
+ "Pythia-PPI": {
+  "slug": "Wublab/pythia_ppi",
+  "url": "https://github.com/Wublab/pythia_ppi",
+  "exists": true,
+  "license": "Apache-2.0",
+  "size_kb": 17071,
+  "default_branch": "main",
+  "pushed_at": "2026-06-13T03:14:31Z",
+  "n_files": 32,
+  "candidates": [],
+  "downloaded": []
+ }
+}

@@ -1,0 +1,13 @@
+scenario,criterion,rank,model,value
+A_quantitative_ddG,rmse,1,L1_random_A1_base_set,1.5463739016820368
+A_quantitative_ddG,rmse,2,L1_random_A4_base_set_local,1.5563832134354694
+A_quantitative_ddG,rmse,3,L1_random_A2_base_global,1.5747834043571831
+A_quantitative_ddG,overall_pearson,1,L1_random_A1_base_set,0.7729346836661417
+B_library_ranking,macro_spearman,1,R1_Base_F0_s42,0.3388448750113191
+B_library_ranking,macro_spearman,2,R0_Base_s42,0.3306017641545147
+B_library_ranking,macro_spearman,3,R2_Base_Residue_s42,0.2681688538390642
+B_library_ranking,overall_pearson,1,L1_random_A1_base_set,0.7729346836661417
+C_wetlab_shortlist,U_norm,1,L1_random_A3_base_local,0.8745589974785394
+C_wetlab_shortlist,U_norm,2,L4_family_A2_base_global_s42,0.8743421629935496
+C_wetlab_shortlist,U_norm,3,L1_random_A0_base,0.8719214543990017
+C_wetlab_shortlist,overall_pearson,1,L1_random_A1_base_set,0.7729346836661417

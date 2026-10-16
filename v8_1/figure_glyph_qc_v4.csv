@@ -1,0 +1,19 @@
+figure,lang,font,missing,cjk_in_en,result
+Fig1_overview,EN,DejaVu Sans,,False,PASS
+Fig2_split_decomposition,EN,DejaVu Sans,,False,PASS
+Fig3_weighting,EN,DejaVu Sans,,False,PASS
+Fig4_candidate_geometry,EN,DejaVu Sans,,False,PASS
+Fig5_remedy,EN,DejaVu Sans,,False,PASS
+Fig6_external,EN,DejaVu Sans,,False,PASS
+FigS1_matched_universes,EN,DejaVu Sans,,False,PASS
+Capability_heatmap_provenance_clean,EN,DejaVu Sans,,False,PASS
+FigS3_capability_pool_sensitivity,EN,DejaVu Sans,,False,PASS
+Fig1_overview,ZH,Microsoft YaHei,,False,PASS
+Fig2_split_decomposition,ZH,Microsoft YaHei,,False,PASS
+Fig3_weighting,ZH,Microsoft YaHei,,False,PASS
+Fig4_candidate_geometry,ZH,Microsoft YaHei,,False,PASS
+Fig5_remedy,ZH,Microsoft YaHei,,False,PASS
+Fig6_external,ZH,Microsoft YaHei,,False,PASS
+FigS1_matched_universes,ZH,Microsoft YaHei,,False,PASS
+Capability_heatmap_provenance_clean,ZH,Microsoft YaHei,,False,PASS
+FigS3_capability_pool_sensitivity,ZH,Microsoft YaHei,,False,PASS

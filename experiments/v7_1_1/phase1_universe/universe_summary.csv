@@ -1,0 +1,7 @@
+universe,n_rows,n_targets,target_id_source
+T_CANONICAL,7523,230,matched_analysis_set.pdb_id
+T_BLOCK_L_V70,4473,208,block_L_local.pdb_id
+T_BLOCK_L_V71,4473,208,block_L_rescued.pdb_id
+T_U_LOCAL_ROWS,4473,208,u_local_rows.pdb_id
+T_LSR,4473,214,lsr_predictions.pdb (= d['groups'])
+T_LOCATION,4473,214,location_predictions.pdb_id

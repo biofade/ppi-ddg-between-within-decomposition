@@ -1,0 +1,4 @@
+scenario,description,primary_metric,top1_ALL_pool,top1_ALL_provenance,top1_ALL_family,top1_ALL_value,top1_STRICT_pool,top1_STRICT_provenance,top1_STRICT_family,top1_STRICT_value,changed_after_provenance_clean
+A_quantitative_ddG,定量 ΔΔG,rmse,L1_random_A1_base_set,PERMISSIVE,V6_2_split4,1.5463739016820368,F8_Full_s42,STRICT,V7.3_physics,2.017781631681768,True
+B_library_ranking,突变文库排序,macro_spearman,R1_Base_F0_s42,STRICT,V7.2R1_representation,0.3388448750113191,R1_Base_F0_s42,STRICT,V7.2R1_representation,0.3388448750113191,False
+C_wetlab_shortlist,湿实验短名单,efficiency@10,L1_random_A3_base_local,PERMISSIVE,V6_2_split4,0.8546606273304961,p_P5_set_only_LSR,STRICT,V7.1_LSR,0.8347116746799619,True

@@ -1,0 +1,40 @@
+file,excerpt,nature,exists,model,split,seed,reported_value,actual_value,source_of_truth
+scripts/v6_2/02_split4_ddg.py,`TREES = 800`（默认值）/ `default=800`,**源码默认值**（被 `--trees 300` 覆盖）,True,,,,,,
+experiments/v6_2/V6_2_FINAL_SUMMARY.md,PHASE 6 段「V6.2 的 M1 已完成 800 树复现」,**报告文本错误**,True,,,,,,
+experiments/v6_2/PROGRESS.md,「800 树 → 本次统一 300 树」,正确说明,True,,,,,,
+,,,,M0,L1_random,42.0,300.0,300.0,CLI --trees 300
+,,,,M0,L1_random,43.0,300.0,300.0,CLI --trees 300
+,,,,M0,L1_random,44.0,300.0,300.0,CLI --trees 300
+,,,,M1,L1_random,42.0,300.0,300.0,CLI --trees 300
+,,,,M1,L1_random,43.0,300.0,300.0,CLI --trees 300
+,,,,M1,L1_random,44.0,300.0,300.0,CLI --trees 300
+,,,,M2,L1_random,42.0,300.0,300.0,CLI --trees 300
+,,,,M2,L1_random,43.0,300.0,300.0,CLI --trees 300
+,,,,M2,L1_random,44.0,300.0,300.0,CLI --trees 300
+,,,,M0,L2_complex,42.0,300.0,300.0,CLI --trees 300
+,,,,M0,L2_complex,43.0,300.0,300.0,CLI --trees 300
+,,,,M0,L2_complex,44.0,300.0,300.0,CLI --trees 300
+,,,,M1,L2_complex,42.0,300.0,300.0,CLI --trees 300
+,,,,M1,L2_complex,43.0,300.0,300.0,CLI --trees 300
+,,,,M1,L2_complex,44.0,300.0,300.0,CLI --trees 300
+,,,,M2,L2_complex,42.0,300.0,300.0,CLI --trees 300
+,,,,M2,L2_complex,43.0,300.0,300.0,CLI --trees 300
+,,,,M2,L2_complex,44.0,300.0,300.0,CLI --trees 300
+,,,,M0,L3_seq40,42.0,300.0,300.0,CLI --trees 300
+,,,,M0,L3_seq40,43.0,300.0,300.0,CLI --trees 300
+,,,,M0,L3_seq40,44.0,300.0,300.0,CLI --trees 300
+,,,,M1,L3_seq40,42.0,300.0,300.0,CLI --trees 300
+,,,,M1,L3_seq40,43.0,300.0,300.0,CLI --trees 300
+,,,,M1,L3_seq40,44.0,300.0,300.0,CLI --trees 300
+,,,,M2,L3_seq40,42.0,300.0,300.0,CLI --trees 300
+,,,,M2,L3_seq40,43.0,300.0,300.0,CLI --trees 300
+,,,,M2,L3_seq40,44.0,300.0,300.0,CLI --trees 300
+,,,,M0,L4_family,42.0,300.0,300.0,CLI --trees 300
+,,,,M0,L4_family,43.0,300.0,300.0,CLI --trees 300
+,,,,M0,L4_family,44.0,300.0,300.0,CLI --trees 300
+,,,,M1,L4_family,42.0,300.0,300.0,CLI --trees 300
+,,,,M1,L4_family,43.0,300.0,300.0,CLI --trees 300
+,,,,M1,L4_family,44.0,300.0,300.0,CLI --trees 300
+,,,,M2,L4_family,42.0,300.0,300.0,CLI --trees 300
+,,,,M2,L4_family,43.0,300.0,300.0,CLI --trees 300
+,,,,M2,L4_family,44.0,300.0,300.0,CLI --trees 300

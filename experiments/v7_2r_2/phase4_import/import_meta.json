@@ -1,0 +1,13 @@
+{
+ "zip": "F:\\dsh\\downloads\\v7_2r_2\\V7_2R_2_TRACKB_FEATURES.zip",
+ "sha256": "f3f0b8b12cb469668effc2cc15cedf90b6cdee9cf6ac4d8e44ef1966cbd231d9",
+ "n_npz": 174,
+ "n_rows": 4219,
+ "dims": {
+  "r_wt": 1280,
+  "r_mut": 1280,
+  "delta_r": 1280
+ },
+ "n_unexpected_files": 0,
+ "n_dup_files": 0
+}

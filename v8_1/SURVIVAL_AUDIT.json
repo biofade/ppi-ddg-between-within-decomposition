@@ -1,0 +1,41 @@
+{
+  "S1": {
+    "range": [
+      -0.2684824630469087,
+      0.8242491657397107
+    ],
+    "n_neg_pools": 3,
+    "n_pos_pools": 7,
+    "verdict": "SURVIVES_ONLY_AS_POOL_DEPENDENT_RANGE — 单值正交/-0.26 不成立；跨池范围包含强正值(+0.82)，因此「近乎正交」**不能作为普遍结论**",
+    "historical_claim": "near-orthogonality / rho=-0.26",
+    "remains_defensible": false
+  },
+  "S2": {
+    "detail": [
+      {
+        "rowset_hash": "34b45937b42b7114",
+        "n_models": 67,
+        "rank_overall": 7,
+        "rank_macro": 67,
+        "displacement": 60,
+        "pool_contains_permissive": true
+      }
+    ],
+    "verdict": "DOES_NOT_SURVIVE_IN_PROVENANCE_CLEAN_POOL",
+    "remains_defensible": false
+  },
+  "S3": {
+    "verdict": "DOES_NOT_QUALIFY_AS_CAUSAL_EVIDENCE",
+    "same_rowsets": false,
+    "same_family_count": false,
+    "remains_defensible": false
+  },
+  "S4": {
+    "primary_rowset": "f8c33c7e987d72c8",
+    "n_clean_models": 30,
+    "scenario_B_top1_macro": "F8_Full_s42",
+    "historical_pick": "L1_random_A1_base_set",
+    "rank_in_clean_pool": 0,
+    "verdict": "NOT_PRESENT_IN_PRIMARY_POOL"
+  }
+}

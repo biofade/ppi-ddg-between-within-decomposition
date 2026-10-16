@@ -1,0 +1,6 @@
+analysis,file,n_rows,n_unique_complex,usable_for_within_target,relation,n,pearson,absdiff_median,absdiff_p95,self_consistent,complex_intersection,pdb_intersection,n_common_pdb,cartesian_rows,usable
+obstacle1_group_key,Synthetic_FoldX_ddG_942723.csv,891674.0,891598.0,False,,,,,,,,,,,
+internal_consistency,,,,,`foldx_ddg` vs (`mut_dg − wt_dg`),891673.0,-1.0,1.4363799999999998,8.91703199999999,False,,,,,
+internal_consistency,,,,,`foldx_ddg` vs (`wt_dg − mut_dg`),891673.0,1.0,0.0,2.220446049250313e-16,True,,,,,
+obstacle2_naming,,,,,,,,,,,0.0,1178.0,,,
+obstacle3_cartesian,,,,,,,,,,,,,1178.0,13791309.0,False

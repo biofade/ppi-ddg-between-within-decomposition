@@ -1,0 +1,10 @@
+{
+  "source": "https://github.com/StatPhysBio/hermes_experiments",
+  "official_row_level_predictions": [
+    "hermes_py000_cdna117k",
+    "hermes_py050_cdna117k"
+  ],
+  "note": "HERMES 是 §9 的首选资源类型：**官方发布的 row-level 预测**，无需推理、无需 GPU、无需 checkpoint。",
+  "evidence_tier_pending": "须先确认 (a) 行映射率, (b) 其 SKEMPI 微调是否与 OUTER_FOLDS_V7_2 家族重叠（§50）",
+  "ddg_sign_convention": "见脚本第 2 节输出；neg_ddg_pred 可能与本项目相反"
+}

@@ -1,0 +1,17 @@
+dataset,model,needs_flip,overall_pearson,overall_pearson_noflip,macro_pdb_spearman,hit10_lt0,base_rate_lt0,efficiency_at_10,utility_model,utility_random,utility_oracle,p_at_10,hit10_ddg_m05,n_rows,n_group,min_group_n,note
+CATH-ddG/official_heldout_CATH,Flex-ddG,False,0.5626,0.5626,0.4159,1.0,0.1815,0.5715,-0.4954,-1.3751,-0.0066,0.9,0.9,741,21,5,真值 = CATH 表 `ddG`（已由 V6 PHASE 2.1 用本地 SKEMPI 独立复算验证：Pearson +0.9869、符号一致 94.99%）
+CATH-ddG/official_heldout_CATH,DDGPred,False,0.5573,0.5573,0.3262,0.8,0.1815,0.3715,-0.8341,-1.4216,-0.0319,0.6,0.6,755,21,5,真值 = CATH 表 `ddG`（已由 V6 PHASE 2.1 用本地 SKEMPI 独立复算验证：Pearson +0.9869、符号一致 94.99%）
+CATH-ddG/official_heldout_CATH,ddG_FoldX,False,0.4348,0.4348,0.3584,0.4,0.1815,0.4505,-0.6697,-1.4216,-0.0319,0.4,0.4,755,21,5,真值 = CATH 表 `ddG`（已由 V6 PHASE 2.1 用本地 SKEMPI 独立复算验证：Pearson +0.9869、符号一致 94.99%）
+CATH-ddG/official_heldout_CATH,ESM-IF,True,-0.1896,0.1896,0.0329,0.4,0.1815,0.0497,-1.2069,-1.4216,-0.0319,0.2,0.2,755,21,5,真值 = CATH 表 `ddG`（已由 V6 PHASE 2.1 用本地 SKEMPI 独立复算验证：Pearson +0.9869、符号一致 94.99%）
+CATH-ddG/official_heldout_CATH,proteinMPNN,False,0.1215,0.1215,0.2227,0.5,0.1815,0.1399,-0.9913,-1.4216,-0.0319,0.3,0.3,755,21,5,真值 = CATH 表 `ddG`（已由 V6 PHASE 2.1 用本地 SKEMPI 独立复算验证：Pearson +0.9869、符号一致 94.99%）
+DSSA-PPI/RBM_case_study,DSSA-PPI,False,0.3081,0.3081,0.3129,1.0,0.8625,0.7439,3.2409,1.2479,3.9271,0.8,0.9,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,PPIFormer,True,0.1519,-0.1519,0.1903,1.0,0.8625,0.2652,1.9584,1.2479,3.9271,0.1,0.9,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,ESM-2-FFN,True,0.0134,-0.0134,0.0132,0.9,0.8625,0.2898,2.0244,1.2479,3.9271,0.4,0.8,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,MuTon,False,0.0009,0.0009,-0.02,0.8,0.8625,0.0513,1.3853,1.2479,3.9271,0.2,0.6,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,MpbPPI,False,0.0799,0.0799,0.0845,1.0,0.8625,-0.0192,1.1966,1.2479,3.9271,0.1,0.6,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,ProBASS,False,0.0047,0.0047,-0.0065,1.0,0.8625,0.3271,2.1242,1.2479,3.9271,0.3,0.8,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,SAAMBE-SEQ,True,0.1934,-0.1934,0.2058,1.0,0.8625,0.5074,2.6073,1.2479,3.9271,0.4,0.9,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+DSSA-PPI/RBM_case_study,FoldX,True,0.5151,-0.5151,0.6478,1.0,0.8625,0.7515,3.2614,1.2479,3.9271,0.5,1.0,1702,1,5,真值 = `EXP_fitness`（适应度，非 ΔΔG）；分组 = `pos` 连续分箱（每箱约 200 个位置序号）—— 这是**代理分组**，不等价于多个独立复合物，须谨慎解读
+V5/PPB-Affinity_development,V5_baseline(plain_s42),False,0.3828,0.3828,0.0782,1.0,0.3729,0.0881,-0.6034,-0.8216,0.0942,1.0,1.0,1129,61,5,"V5 baseline, PPB-Affinity triple-isolation split"
+V5/PPB-Affinity_development,V5_baseline(plain_s43),False,0.376,0.376,0.097,0.9,0.3729,0.0838,-0.6101,-0.8216,0.0942,0.9,0.9,1129,61,5,"V5 baseline, PPB-Affinity triple-isolation split"
+V5/PPB-Affinity_development,V5_baseline(plain_s44),False,0.3574,0.3574,0.0752,1.0,0.3729,0.1323,-0.6359,-0.8216,0.0942,1.0,1.0,1129,61,5,"V5 baseline, PPB-Affinity triple-isolation split"

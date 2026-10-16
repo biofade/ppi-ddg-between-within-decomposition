@@ -1,0 +1,14 @@
+dataset,column,model,n_nonnull,pearson_full_table,needs_flip,sign_convention
+CATH-ddG/SKEMPI_v2.0,Flex-ddG,flex ddG,6569,0.496995,False,higher=destabilizing
+CATH-ddG/SKEMPI_v2.0,DDGPred,DDGPred,6583,0.57681,False,higher=destabilizing
+CATH-ddG/SKEMPI_v2.0,ddG_FoldX,FoldX,6706,0.496513,False,higher=destabilizing
+CATH-ddG/SKEMPI_v2.0,ESM-IF,ESM-IF,6706,-0.262459,True,lower=destabilizing
+CATH-ddG/SKEMPI_v2.0,proteinMPNN,ProteinMPNN,6706,0.313709,False,higher=destabilizing
+DSSA-PPI/RBM_case_study,DSSA-PPI,DSSA-PPI,1702,0.3081,False,higher=beneficial
+DSSA-PPI/RBM_case_study,PPIFormer,PPIFormer,1702,-0.151932,True,lower=beneficial
+DSSA-PPI/RBM_case_study,ESM-2-FFN,ESM-2-FFN,1702,-0.013413,True,lower=beneficial
+DSSA-PPI/RBM_case_study,MuTon,MuTon,1702,0.000926,False,higher=beneficial
+DSSA-PPI/RBM_case_study,MpbPPI,MpbPPI,1702,0.079872,False,higher=beneficial
+DSSA-PPI/RBM_case_study,ProBASS,ProBASS,1702,0.004668,False,higher=beneficial
+DSSA-PPI/RBM_case_study,SAAMBE-SEQ,SAAMBE-SEQ,1702,-0.193412,True,lower=beneficial
+DSSA-PPI/RBM_case_study,FoldX,FoldX,1702,-0.515068,True,lower=beneficial

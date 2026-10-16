@@ -1,0 +1,66 @@
+{
+  "strata": [
+    {
+      "stratum": "ALL_rows",
+      "n_rows": 4473,
+      "n_targets_ge5": 130,
+      "n_models": 136,
+      "rho_overall_macro": 0.18943008948692114,
+      "tau_overall_macro": 0.13303508957863824,
+      "rho_overall_eff10": 0.03113906206528079,
+      "median_overall_r": 0.23473659337550723,
+      "median_macro": 0.04931463599127419,
+      "median_eff10": 0.8194107898006102
+    },
+    {
+      "stratum": "single_point",
+      "n_rows": 2897,
+      "n_targets_ge5": 99,
+      "n_models": 136,
+      "rho_overall_macro": 0.3808880829544957,
+      "tau_overall_macro": 0.2730605286917862,
+      "rho_overall_eff10": 0.04113066426642973,
+      "median_overall_r": 0.21378352515179058,
+      "median_macro": 0.04196828258424263,
+      "median_eff10": 0.8233187020141997
+    },
+    {
+      "stratum": "multi_point",
+      "n_rows": 1576,
+      "n_targets_ge5": 45,
+      "n_models": 136,
+      "rho_overall_macro": 0.14083673857168677,
+      "tau_overall_macro": 0.10245231036515819,
+      "rho_overall_eff10": 0.6721762107355556,
+      "median_overall_r": 0.2674409105563067,
+      "median_macro": 0.13299696899840474,
+      "median_eff10": 0.8347060761683558
+    },
+    {
+      "stratum": "single_point__common_targets",
+      "n_rows": 2172,
+      "n_targets_ge5": 63,
+      "n_models": 136,
+      "rho_overall_macro": 0.5146915733673986,
+      "tau_overall_macro": 0.3781342201323855,
+      "rho_overall_eff10": 0.10189621060436274,
+      "median_overall_r": 0.25001018056263424,
+      "median_macro": 0.06561415146581301,
+      "median_eff10": 0.8152605851331907
+    },
+    {
+      "stratum": "multi_point__common_targets",
+      "n_rows": 1453,
+      "n_targets_ge5": 39,
+      "n_models": 136,
+      "rho_overall_macro": 0.3023986558256517,
+      "tau_overall_macro": 0.21844842295342898,
+      "rho_overall_eff10": 0.6266247157913013,
+      "median_overall_r": 0.24798242899006734,
+      "median_macro": 0.13921926100942328,
+      "median_eff10": 0.8141518301674175
+    }
+  ],
+  "verdict": "MULTIPOINT_NOT_THE_DRIVER",
+  "caveat": "单点/多点子集的 target 集合不同；common_targets 变体用于尽量受控。仍非完全受控实验。"
+}

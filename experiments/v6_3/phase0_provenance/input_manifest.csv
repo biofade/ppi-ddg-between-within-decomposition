@@ -1,0 +1,13 @@
+name,path,exists,size_bytes,sha256_prefix40,role
+matched_analysis_set,experiments/v6_2/phase2_split4/matched_analysis_set.csv,True,754492,8d209eea08cc6058fb235b059c9e3725fcbc9ba8,V6.2 canonical 行宇宙
+split4_predictions,experiments/v6_2/phase2_split4/split4_predictions.npz,True,1696726,ba711ea1b349836ac18b44ba67f6ab2f0a0b680b,L4 M1/M0 预测（本审计 primary）
+d_only_predictions,experiments/v6_2_1/phase3_d_only/d_only_predictions.npz,True,484102,98b64c2b02140f232d993251c32d5a02daea7f2e,V6.2.1 真 D-only M2
+target_level_stats,experiments/v6_2_1/phase4_target_size/target_level_stats.csv,True,117839,63c6d2a905ca2bcfca6adee8ad61b92d32b2838b,V6.2.1 two-tier target 统计
+primary_table,experiments/v6_2_1/phase5_corrected_stats/primary_table.csv,True,796,d02e6d79d9b23a6f53a367b9e1e6eb1aa847edf3,V6.2.1 修正后核心表
+route_statistics,experiments/v6_2_1/phase5_corrected_stats/route_statistics.csv,True,1077,b63cfe240567ddd56b746018a5d2d1c79e505f74,V6.2.1 route stats
+ddg_pairs,data/v4.0/ddg_pairs.csv,True,2238640,e43b19d69a8b54efe5cc4b3e647e87657106e86c,ΔΔG 配对（含 n_mut / mutation / assay / temp）
+ddg_split,data/v4.0/ddg_split.json,True,82187,92d4e8d78f0778ff82f12896aeedc9607e5e8cf7,V4 划分 + family_of_complex
+v22_features,features/v2.2_proteinea_features.csv,True,11852893,134a406175c975541ae40aed37c3f824ad151942,58 个数值结构描述符 + 序列/实验元数据
+skempi_v2,data/v2.4/skempi_v2_cleaned.csv,True,1568384,72eaccc14c370bb61d5053cba06702e315d38195,第三方真值（符号审计用）
+esm2_cache,features/v2_esm2_cache.npz,True,52481097,2b6fdcc331dd5030c70ffff557d3cdbc37111a0b,pooled ESM-2 嵌入
+v5_common,scripts/v5/v5_common.py,True,27748,91bee0814f66737b50edadd937d967644bbf3ec7,特征装配与超参配置源

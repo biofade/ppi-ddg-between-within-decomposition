@@ -1,0 +1,11 @@
+{
+  "rows": 7523,
+  "distinct_obs_keys": 4812,
+  "dup_keys": 2011,
+  "keys_spanning_multiple_families": 0,
+  "keys_spanning_multiple_seq40": 0,
+  "keys_spanning_multiple_states": 1395,
+  "keys_spanning_multiple_pdbs": 0,
+  "units_upper_bound": 6047,
+  "structural_conclusion": "same obs_key rows are union-merged into one unit, and KFold splits at unit granularity, so identical keys cannot straddle folds"
+}

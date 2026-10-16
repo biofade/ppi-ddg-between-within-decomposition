@@ -1,0 +1,6 @@
+kind,path,size,sha256_prefix16,mtime
+v72_report,experiments\v7_2\phase0_provenance\model_decision.md,2354,d398653d5dc00558,2026-10-14 18:18
+v72_report,experiments\v7_2\phase1_embeddings\embedding_report.md,654,3c19fe29f9b51ed2,2026-10-14 18:24
+v72_manifest,features\v7_2\residue_embedding_manifest.csv,147,ff2bdff5f52b5215,2026-10-14 18:24
+v72_residue_embeddings,features/v7_2/per_target/*.npz,1105582,10_files,
+model_cache,F:\dsh\cache\huggingface,31385421,esm2_t6_8M_UR50D,

@@ -1,0 +1,38 @@
+dataset,split,model,overall_pearson,overall_spearman,per_structure_pearson,per_structure_spearman,rmse,mae,auroc,n_pairs,n_complex,sequence_control,source
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,FoldX,0.4603,0.5246,0.4932,0.4303,2.3083,1.6837,0.7541,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,flex ddG,0.6081,0.6096,0.5083,0.4542,2.0643,1.4946,0.7637,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,ProteinMPNN,0.1837,0.3668,0.1878,0.2543,2.5559,1.8612,0.6788,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,ESM-IF,0.1421,-0.1813,-0.0876,-0.1331,2.5738,1.9376,0.3916,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,RDE-Network,0.4588,0.4703,0.35,0.288,2.3103,1.7029,0.7452,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,DiffAffinity,0.3144,0.3626,0.3233,0.2494,2.4684,1.7393,0.6251,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,PPIFORMER,0.2654,0.3145,0.2169,0.2164,2.5069,1.8191,0.674,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,Prompt-DDG,0.3538,0.397,0.3212,0.3025,2.432,1.7556,0.6851,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,DDAffinity,0.3984,0.4026,0.231,0.1956,2.3849,1.7871,0.7248,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_heldout_CATH,official_heldout_CATH_blind_test,CATH-ddG,0.615,0.6269,0.526,0.494,2.0504,1.5047,0.7805,813,53,CATH 同源超家族 hold-out；held-out CATH test 序列同一性 <30% （query 或 subject coverage ≥80%），且无 easy mutation（最大 TM-score <0.6）,"CATH-ddG Table 2 (Bioinformatics 2025, btaf228); Europe PMC full text PMC12261453"
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,FoldX,0.56,0.53,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,flex ddG,0.57,0.55,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,GEMME,0.41,0.38,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,MSA Transformer,0.36,0.31,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,ESM-IF,0.18,0.18,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,RDE-Network,0.3,0.24,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,PPIFORMER,0.46,0.44,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,DiffAffinity,0.41,0.31,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,Prompt-DDG,0.13,0.12,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,DDAffinity,0.38,0.34,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+SKEMPI_v2.0_PPIFORMER_split,PPIFORMER_heldout_proteins,CATH-ddG,0.63,0.56,,,,,,219,14,PPIFORMER 选定的 5 个 hold-out protein（14 PPIs）,CATH-ddG Table 3 (btaf228)
+HER2_binders,case_study,FoldX,0.246,0.329,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,GearBind+P,0.515,0.517,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,GearBind+Ensemble,0.579,0.608,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,RDE-Network,0.465,0.481,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,Prompt-DDG,0.413,0.432,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,DiffAffinity,0.59,0.524,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,DDGPred,0.387,0.388,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,GearBind,0.478,0.475,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,DDAffinity,0.386,0.356,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+HER2_binders,case_study,CATH-ddG,0.607,0.639,,,,,,419,1,抗体变体（419 条）,CATH-ddG Table 4 (btaf228)
+SARS_CoV_2_RBD_ACE2,case_study,FoldX,0.385,,,,,,,285,1,RBD 变体（285 条）,CATH-ddG Table 5 (btaf228)
+SARS_CoV_2_RBD_ACE2,case_study,RDE-Network,0.403,,,,,,,285,1,RBD 变体（285 条）,CATH-ddG Table 5 (btaf228)
+SARS_CoV_2_RBD_ACE2,case_study,DiffAffinity,0.305,,,,,,,285,1,RBD 变体（285 条）,CATH-ddG Table 5 (btaf228)
+SARS_CoV_2_RBD_ACE2,case_study,DDAffinity,0.456,,,,,,,285,1,RBD 变体（285 条）,CATH-ddG Table 5 (btaf228)
+SARS_CoV_2_RBD_ACE2,case_study,CATH-ddG,0.579,,,,,,,285,1,RBD 变体（285 条）,CATH-ddG Table 5 (btaf228)
+PPB_Affinity_DEVELOPMENT_BENCHMARK,V4_triple_isolation_family_level(<=40pct_seqid),V5_baseline_C+DGaux_fwd+rev,0.3861,0.1871,0.1334,0.0956,2.1484,1.5313,0.5996,1129,61,复合物级 + ≤40% 序列同一性 + 家族级三重隔离,PROJECT_EVIDENCE: experiments/v5_0/p0_benchmark/baseline_repro_results.csv

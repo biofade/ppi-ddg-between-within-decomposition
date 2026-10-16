@@ -1,0 +1,4 @@
+scenario,description,primary_metric,top1,top1_family,top1_primary_value,top1_overall_r,top1_macro,top1_rmse,overall_pearson_pick,overall_pearson_pick_rank_in_scenario,overall_pearson_pick_in_top3,top10_family_counts
+A_quantitative_ddG,定量 ΔΔG 预测（需要绝对数值可信）,rmse,L1_random_A1_base_set,V6_2_split4,1.5463739016820368,0.7729346836661417,0.0746716994078571,1.5463739016820368,L1_random_A1_base_set,1,True,"{'V6_2_split4': 7, 'V7.3_physics': 3}"
+B_library_ranking,突变文库排序（只要序对，不要绝对值）,macro_spearman,R1_Base_F0_s42,V7.2R1_representation,0.3388448750113191,0.3241280838282348,0.3388448750113191,2.91407418586622,L1_random_A1_base_set,54,False,{'V7.2R1_representation': 10}
+C_wetlab_shortlist,湿实验短名单（Top-K 命中）,U_norm,L1_random_A3_base_local,V6_2_split4,0.8745589974785394,0.6921991479791809,0.0875346939257734,1.763943474825827,L1_random_A1_base_set,10,False,{'V6_2_split4': 10}
