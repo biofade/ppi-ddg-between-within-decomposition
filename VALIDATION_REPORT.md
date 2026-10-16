@@ -3,17 +3,13 @@
 Automated consistency check of the final manuscript and supplementary PDF.
 
 ```
-VALIDATION:  PASS = 67    WARNING = 1    FAIL = 0
+VALIDATION:  PASS = 68    WARNING = 0    FAIL = 0
 ```
 
 This report is regenerated on every run of `validate_final_manuscript.py`. Every check
 either recomputes a headline number from the frozen artifacts in `v8_1/`, or reads the
 **compiled** PDFs in `latex_v6/` (so figure-internal text and table values are checked as
 printed, not as intended).
-
-## Open items
-
-- **WARN** `R. Data/code availability truthful` - Manuscript states frozen hashes + machine-readable source + consistency checker are provided with the Supplementary Information, and that a public repository will be linked on acceptance. Repository URL not yet supplied (author action pending), so the availability statement currently relies on the SI package.
 
 ## All checks
 
@@ -38,7 +34,7 @@ printed, not as intended).
 | 17 | O. D(n,K) derived with E_max/E_rand | PASS | Supplementary Note 4 defines E_max, E_rand, derives D(n,K) and n* |
 | 18 | P. LA/LC/* defined + pool table | PASS | Figure S3 caption defines LA/LC; Table S4 lists pool composition |
 | 19 | Q. weighted decomposition derived | PASS | Supplementary Note 5 states a_c schemes and proves r_w = C_B,w + C_W,w |
-| 20 | R. Data/code availability truthful | WARN | Manuscript states frozen hashes + machine-readable source + consistency checker are provided with the Supplementary Information, and that a public repository will be linked on acceptance. Repository URL not yet supplied  |
+| 20 | R. Data/code availability truthful | PASS | public repository URL is stated in the manuscript and the SI artifacts exist in the submission package |
 | 21 | S. author metadata filled | PASS | real author name, affiliation, corresponding email, ORCID and funding statement are present in the manuscript; no placeholder remains |
 | 22 | T. no fabricated values | PASS | Every headline number traced to v8_1 artifacts; Figure 3 histogram regenerated from the real 109 configuration values (previous hardcoded bins did not match the data and were replaced) |
 | 23 | U. weighted identity r_w = C_B,w + C_W,w | PASS | 109 configs x 5 schemes; max\|residual\| = 5.551e-17; by scheme {'ROW': 5.551115123125783e-17, 'EQUAL': 5.551115123125783e-17, 'SQRT': 5.551115123125783e-17, 'LOG': 5.551115123125783e-17, 'CAP30': 5.551115123125783e-17} |

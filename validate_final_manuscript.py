@@ -314,8 +314,12 @@ _url_ok = bool(re.match(r"^https?://", _repo_url.strip())) and "TODO" not in _re
 _dmR = pymupdf.open(str(LATEX / "manuscript_v6.pdf"))
 _tmR = "\n".join(pg.get_text() for pg in _dmR)
 _dmR.close()
+def _norm_url(x):
+    # \url{} 会把连字符排成 U+2010 等排版变体，比较前统一为 ASCII '-'
+    return re.sub("[\u2010-\u2015\u2212]", "-", x).lower()
 _avail_claimed = "automated consistency checker" in _tmR
-if _url_ok and _avail_claimed and _repo_url.strip() in _tmR:
+_tmR_norm = _norm_url(_tmR)
+if _url_ok and _avail_claimed and _norm_url(_repo_url.strip()) in _tmR_norm:
     rec("R. Data/code availability truthful", "PASS",
         "public repository URL is stated in the manuscript and the SI artifacts exist "
         "in the submission package")

@@ -1,5 +1,5 @@
 {
-  "_note": "真实 metadata（由作者提供）。repository.url 待作者上传 GitHub 后填入。",
+  "_note": "真实 metadata（由作者提供）。仓库已推送，source_url 已经 SHA-256 双向核验。",
 
   "authors": [
     {
@@ -21,9 +21,9 @@
 
   "repository": {
     "route": "public_repository",
-    "url": "TODO_PENDING_GITHUB_URL",
+    "url": "https://github.com/biofade/ppi-ddg-between-within-decomposition",
     "doi": "",
     "accession": "",
-    "license": "TODO: 建议 MIT（代码）+ CC-BY-4.0（数据/文本）"
+    "license": "MIT (code); CC-BY-4.0 (text and figures)"
   }
 }

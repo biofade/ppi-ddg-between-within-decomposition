@@ -135,8 +135,8 @@
     },
     {
       "check": "R. Data/code availability truthful",
-      "status": "WARNING",
-      "detail": "Manuscript states frozen hashes + machine-readable source + consistency checker are provided with the Supplementary Information, and that a public repository will be linked on acceptance. Repository URL not yet supplied (author action pending), so the availability statement currently relies on the SI package.",
+      "status": "PASS",
+      "detail": "public repository URL is stated in the manuscript and the SI artifacts exist in the submission package",
       "old": null,
       "new": null
     },
