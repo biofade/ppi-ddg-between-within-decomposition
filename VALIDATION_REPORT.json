@@ -80,7 +80,7 @@
     {
       "check": "J. LaTeX build cleanly",
       "status": "PASS",
-      "detail": "[source=log] main fatal=0 cite_undef=0 ref_undef=0 pages=15 | supp fatal=0 pages=12",
+      "detail": "[source=pdf] main fatal=0 cite_undef=0 ref_undef=0 pages=15 | supp fatal=0 pages=12",
       "old": null,
       "new": null
     },

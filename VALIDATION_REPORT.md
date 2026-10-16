@@ -30,7 +30,7 @@ printed, not as intended).
 | 9 | G2. Flex-ddG/FoldX rank-swap text | PASS | text states a single adjacent swap; old 'no rank reversal' claim absent=True |
 | 10 | H. Table S1 vs Figure S1 | PASS | 12 strata; all row counts and hashes found in FigS1 vector text |
 | 11 | I. fingerprints / row-id sets | PASS | mas=7523 rows, canonical=4473 rows, subset relation holds |
-| 12 | J. LaTeX build cleanly | PASS | [source=log] main fatal=0 cite_undef=0 ref_undef=0 pages=15 \| supp fatal=0 pages=12 |
+| 12 | J. LaTeX build cleanly | PASS | [source=pdf] main fatal=0 cite_undef=0 ref_undef=0 pages=15 \| supp fatal=0 pages=12 |
 | 13 | K. 4,473 vs 7,523 universe explained | PASS | canonical subset of mas = True; mas\canon=3050 rows; Methods section + Supplementary Note 2 present |
 | 14 | L. median-vs-exact wording | PASS | Table 2 note + Figure 2 caption state marginal medians and per-configuration identity |
 | 15 | M. 81.1% interpretation | PASS | marginal-median attribution=0.8113; paired=0.8104; 95% CI=[0.7097198883539126, 0.8448723244877555] |
